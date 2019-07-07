@@ -18,14 +18,14 @@ If you have any suggestions please add them as an issue.
 
 -----------
 # Building mods
-Run `build/build_mods.py` to create the mods in the [application directory of Factorio](https://wiki.factorio.com/Application_directory). Currently only tested on windows systems
+Run `build_scripts/build_mods.py` to create the mods in the [application directory of Factorio](https://wiki.factorio.com/Application_directory). Currently only tested on windows systems
 This will check for any changes in each mod. If there are changes these are applied to the mod in the application directory, and the version is automatically increased.  
 
 # Contributing
 Before contributing:
 * Create a new issue if none exist yet
 * Mention within the issue that you will be working on it
-Create a new branch from Develop called <ModName>-<Issue-name>-<Issue-number>. Issue name can be a short version if it is otherwise too long
+Create a new branch from Develop called \<ModName\>-\<Issue-name\>-\<Issue-number\>. Issue name can be a short version if it is otherwise too long
 
 Before creating a pull request into Develop make sure you did the following:
 
