@@ -18,7 +18,7 @@ If you have any suggestions please add them as an issue.
 
 -----------
 # Building mods
-Run `build/build_mods.py` to create the mods in the [application directory of Factorio](https://wiki.factorio.com/Application_directory). Currently only tested on windows systems
+Run `build_scripts/build_mods.py` to create the mods in the [application directory of Factorio](https://wiki.factorio.com/Application_directory). Currently only tested on windows systems
 This will check for any changes in each mod. If there are changes these are applied to the mod in the application directory, and the version is automatically increased.  
 
 # Contributing
