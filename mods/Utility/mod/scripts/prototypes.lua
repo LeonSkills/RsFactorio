@@ -24,6 +24,8 @@ function get_prototype(name, prototype)
 end
 
 function create_item(table)
+  table.localised_name = table.localised_name or {"item-name." .. table.name}
+  table.localised_description = table.localised_description or {"item-description." .. table.name}
   table.name = get_vanilla_name(table.name)
 
   local prototype = get_prototype(table.name, "item")

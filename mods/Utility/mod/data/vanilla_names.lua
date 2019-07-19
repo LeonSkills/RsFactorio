@@ -7,5 +7,6 @@ return {
   ["rs-bronze-bar"] = "copper-plate",
   ["rs-steel-bar"] = "steel-plate",
   ["rs-clay"] = "stone",
+  ["rs-bronze-cable"] = "copper-cable"
 
 }

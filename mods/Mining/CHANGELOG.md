@@ -2,3 +2,4 @@
 ### Added
 - Added Mining mod
 - Added rs ore and bar items
+- Added cables and pickaxes

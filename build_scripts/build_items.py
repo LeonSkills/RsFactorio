@@ -60,8 +60,6 @@ def main():
                 data["flags"] = {}
                 data["icon"] = "__" + mod_name + "__/graphics/icons/" + rs_name + ".png"
                 data["icon_size"] = 32
-                data["localised_name"] = ["item-name." + data["name"]]
-                data["localised_description"] = ["item-description." + data["name"]]
 
                 for key, value in rs_data.items():
                     data[key] = value

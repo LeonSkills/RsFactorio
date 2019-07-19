@@ -12,12 +12,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/clay.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-clay',
-    },
-    ['localised_description'] = {
-      'item-description.rs-clay',
-    },
     ['high_alch'] = 0,
     ['low_alch'] = 0,
     ['examine'] = 'Some hard dry clay.',
@@ -36,12 +30,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/tin_ore.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-tin-ore',
-    },
-    ['localised_description'] = {
-      'item-description.rs-tin-ore',
-    },
     ['high_alch'] = 10,
     ['low_alch'] = 6,
     ['examine'] = 'Used in Smithing (1).',
@@ -59,12 +47,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/copper_ore.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-copper-ore',
-    },
-    ['localised_description'] = {
-      'item-description.rs-copper-ore',
-    },
     ['high_alch'] = 10,
     ['low_alch'] = 6,
     ['examine'] = 'Used in Smithing (1).',
@@ -84,12 +66,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/iron_ore.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-iron-ore',
-    },
-    ['localised_description'] = {
-      'item-description.rs-iron-ore',
-    },
     ['high_alch'] = 15,
     ['low_alch'] = 10,
     ['examine'] = 'Used in Smithing (10,20).',
@@ -111,12 +87,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/coal.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-coal',
-    },
-    ['localised_description'] = {
-      'item-description.rs-coal',
-    },
     ['high_alch'] = 25,
     ['low_alch'] = 16,
     ['examine'] = 'Used in Smithing (20,30).',
@@ -136,12 +106,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/mithril_ore.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-mithril-ore',
-    },
-    ['localised_description'] = {
-      'item-description.rs-mithril-ore',
-    },
     ['high_alch'] = 35,
     ['low_alch'] = 23,
     ['examine'] = 'Used in Smithing (30).',
@@ -160,12 +124,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/luminite.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-luminite',
-    },
-    ['localised_description'] = {
-      'item-description.rs-luminite',
-    },
     ['high_alch'] = 50,
     ['low_alch'] = 33,
     ['examine'] = 'Used in Smithing (40,50).',
@@ -182,12 +140,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/adamantite_ore.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-adamantite-ore',
-    },
-    ['localised_description'] = {
-      'item-description.rs-adamantite-ore',
-    },
     ['high_alch'] = 50,
     ['low_alch'] = 33,
     ['examine'] = 'Used in Smithing (40).',
@@ -204,12 +156,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/runite_ore.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-runite-ore',
-    },
-    ['localised_description'] = {
-      'item-description.rs-runite-ore',
-    },
     ['high_alch'] = 125,
     ['low_alch'] = 83,
     ['examine'] = 'Used in Smithing (50).',
@@ -228,12 +174,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/drakolith.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-drakolith',
-    },
-    ['localised_description'] = {
-      'item-description.rs-drakolith',
-    },
     ['high_alch'] = 250,
     ['low_alch'] = 166,
     ['examine'] = 'Used in Smithing (60).',
@@ -250,12 +190,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/orichalcite_ore.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-orichalcite-ore',
-    },
-    ['localised_description'] = {
-      'item-description.rs-orichalcite-ore',
-    },
     ['high_alch'] = 250,
     ['low_alch'] = 166,
     ['examine'] = 'Used in Smithing (60).',
@@ -273,12 +207,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/phasmatite.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-phasmatite',
-    },
-    ['localised_description'] = {
-      'item-description.rs-phasmatite',
-    },
     ['high_alch'] = 500,
     ['low_alch'] = 333,
     ['examine'] = 'Used in Smithing (70).',
@@ -295,12 +223,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/necrite_ore.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-necrite-ore',
-    },
-    ['localised_description'] = {
-      'item-description.rs-necrite-ore',
-    },
     ['high_alch'] = 500,
     ['low_alch'] = 333,
     ['examine'] = 'Used in Smithing (70).',
@@ -317,12 +239,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/banite_ore.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-banite-ore',
-    },
-    ['localised_description'] = {
-      'item-description.rs-banite-ore',
-    },
     ['high_alch'] = 640,
     ['low_alch'] = 426,
     ['examine'] = 'This mystical ore could do with some magical input.',
@@ -339,12 +255,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/light_animica.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-light-animica',
-    },
-    ['localised_description'] = {
-      'item-description.rs-light-animica',
-    },
     ['high_alch'] = 1040,
     ['low_alch'] = 693,
     ['examine'] = 'Used in Smithing (90).',
@@ -361,19 +271,13 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/dark_animica.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-dark-animica',
-    },
-    ['localised_description'] = {
-      'item-description.rs-dark-animica',
-    },
     ['high_alch'] = 1040,
     ['low_alch'] = 693,
     ['examine'] = 'Used in Smithing (90).',
   },
   ['Soft clay'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'intermediate',
+    ['subgroup'] = 'mining-intermediate',
     ['stack_size'] = 100,
     ['order'] = 1,
     ['rs_name'] = 'soft_clay',
@@ -383,12 +287,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/soft_clay.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-soft-clay',
-    },
-    ['localised_description'] = {
-      'item-description.rs-soft-clay',
-    },
     ['high_alch'] = 1,
     ['low_alch'] = 0,
     ['examine'] = 'Clay soft enough to mould. Used in Crafting (1).',
@@ -406,12 +304,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/bronze_bar.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-bronze-bar',
-    },
-    ['localised_description'] = {
-      'item-description.rs-bronze-bar',
-    },
     ['high_alch'] = 27,
     ['low_alch'] = 18,
     ['examine'] = 'Used in Smithing (1).',
@@ -429,12 +321,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/iron_bar.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-iron-bar',
-    },
-    ['localised_description'] = {
-      'item-description.rs-iron-bar',
-    },
     ['high_alch'] = 35,
     ['low_alch'] = 23,
     ['examine'] = 'Used in Smithing (10).',
@@ -452,12 +338,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/steel_bar.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-steel-bar',
-    },
-    ['localised_description'] = {
-      'item-description.rs-steel-bar',
-    },
     ['high_alch'] = 50,
     ['low_alch'] = 33,
     ['examine'] = 'Used in Smithing (20).',
@@ -474,12 +354,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/mithril_bar.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-mithril-bar',
-    },
-    ['localised_description'] = {
-      'item-description.rs-mithril-bar',
-    },
     ['high_alch'] = 75,
     ['low_alch'] = 50,
     ['examine'] = 'Used in Smithing (30).',
@@ -496,12 +370,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/adamant_bar.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-adamant-bar',
-    },
-    ['localised_description'] = {
-      'item-description.rs-adamant-bar',
-    },
     ['high_alch'] = 100,
     ['low_alch'] = 66,
     ['examine'] = 'Used in Smithing (40).',
@@ -518,12 +386,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/rune_bar.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-rune-bar',
-    },
-    ['localised_description'] = {
-      'item-description.rs-rune-bar',
-    },
     ['high_alch'] = 250,
     ['low_alch'] = 166,
     ['examine'] = 'Used in Smithing (50).',
@@ -540,12 +402,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/orikalkum_bar.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-orikalkum-bar',
-    },
-    ['localised_description'] = {
-      'item-description.rs-orikalkum-bar',
-    },
     ['high_alch'] = 500,
     ['low_alch'] = 333,
     ['examine'] = 'Used in Smithing (60).',
@@ -562,12 +418,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/necronium_bar.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-necronium-bar',
-    },
-    ['localised_description'] = {
-      'item-description.rs-necronium-bar',
-    },
     ['high_alch'] = 1000,
     ['low_alch'] = 666,
     ['examine'] = 'Used in Smithing (70).',
@@ -584,12 +434,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/bane_bar.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-bane-bar',
-    },
-    ['localised_description'] = {
-      'item-description.rs-bane-bar',
-    },
     ['high_alch'] = 2000,
     ['low_alch'] = 1333,
     ['examine'] = 'Used in Smithing (80).',
@@ -606,19 +450,13 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/elder_rune_bar.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-elder-rune-bar',
-    },
-    ['localised_description'] = {
-      'item-description.rs-elder-rune-bar',
-    },
     ['high_alch'] = 5000,
     ['low_alch'] = 3333,
     ['examine'] = 'Used in Smithing (90).',
   },
   ['Bronze nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'intermediate',
+    ['subgroup'] = 'mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-1',
     ['rs_name'] = 'bronze_nails',
@@ -628,19 +466,13 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/bronze_nails.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-bronze-nails',
-    },
-    ['localised_description'] = {
-      'item-description.rs-bronze-nails',
-    },
     ['high_alch'] = 1,
     ['low_alch'] = 0,
     ['examine'] = 'Keeps things in place fairly permanently.',
   },
   ['Iron nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'intermediate',
+    ['subgroup'] = 'mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-10',
     ['rs_name'] = 'iron_nails',
@@ -650,19 +482,13 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/iron_nails.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-iron-nails',
-    },
-    ['localised_description'] = {
-      'item-description.rs-iron-nails',
-    },
     ['high_alch'] = 1,
     ['low_alch'] = 0,
     ['examine'] = 'Keeps things in place fairly permanently.',
   },
   ['Steel nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'intermediate',
+    ['subgroup'] = 'mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-20',
     ['rs_name'] = 'steel_nails',
@@ -672,19 +498,13 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/steel_nails.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-steel-nails',
-    },
-    ['localised_description'] = {
-      'item-description.rs-steel-nails',
-    },
     ['high_alch'] = 1,
     ['low_alch'] = 1,
     ['examine'] = 'Keeps things in place fairly permanently. Used in Construction (1).',
   },
   ['Mithril nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'intermediate',
+    ['subgroup'] = 'mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-30',
     ['rs_name'] = 'mithril_nails',
@@ -694,19 +514,13 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/mithril_nails.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-mithril-nails',
-    },
-    ['localised_description'] = {
-      'item-description.rs-mithril-nails',
-    },
     ['high_alch'] = 2,
     ['low_alch'] = 1,
     ['examine'] = 'Keeps things in place fairly permanently.',
   },
   ['Adamant nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'intermediate',
+    ['subgroup'] = 'mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-40',
     ['rs_name'] = 'adamant_nails',
@@ -716,19 +530,13 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/adamant_nails.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-adamant-nails',
-    },
-    ['localised_description'] = {
-      'item-description.rs-adamant-nails',
-    },
     ['high_alch'] = 3,
     ['low_alch'] = 2,
     ['examine'] = 'Keeps things in place fairly permanently.',
   },
   ['Rune nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'intermediate',
+    ['subgroup'] = 'mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-50',
     ['rs_name'] = 'rune_nails',
@@ -738,12 +546,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/rune_nails.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-rune-nails',
-    },
-    ['localised_description'] = {
-      'item-description.rs-rune-nails',
-    },
     ['high_alch'] = 6,
     ['low_alch'] = 4,
     ['examine'] = 'Keeps things in place fairly permanently.',
@@ -760,12 +562,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/bronze_pickaxe.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-bronze-pickaxe',
-    },
-    ['localised_description'] = {
-      'item-description.rs-bronze-pickaxe',
-    },
     ['high_alch'] = 100,
     ['low_alch'] = 67,
     ['examine'] = 'Used for mining.',
@@ -782,12 +578,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/iron_pickaxe.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-iron-pickaxe',
-    },
-    ['localised_description'] = {
-      'item-description.rs-iron-pickaxe',
-    },
     ['high_alch'] = 150,
     ['low_alch'] = 100,
     ['examine'] = 'Used for mining.',
@@ -804,12 +594,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/steel_pickaxe.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-steel-pickaxe',
-    },
-    ['localised_description'] = {
-      'item-description.rs-steel-pickaxe',
-    },
     ['high_alch'] = 200,
     ['low_alch'] = 133,
     ['examine'] = 'A steel pickaxe.',
@@ -826,12 +610,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/mithril_pickaxe.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-mithril-pickaxe',
-    },
-    ['localised_description'] = {
-      'item-description.rs-mithril-pickaxe',
-    },
     ['high_alch'] = 300,
     ['low_alch'] = 200,
     ['examine'] = 'A mithril pickaxe.',
@@ -848,12 +626,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/adamant_pickaxe.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-adamant-pickaxe',
-    },
-    ['localised_description'] = {
-      'item-description.rs-adamant-pickaxe',
-    },
     ['high_alch'] = 400,
     ['low_alch'] = 267,
     ['examine'] = 'An adamant pickaxe.',
@@ -870,12 +642,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/rune_pickaxe.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-rune-pickaxe',
-    },
-    ['localised_description'] = {
-      'item-description.rs-rune-pickaxe',
-    },
     ['high_alch'] = 1000,
     ['low_alch'] = 667,
     ['examine'] = 'A rune pickaxe.',
@@ -892,12 +658,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/orikalkum_pickaxe.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-orikalkum-pickaxe',
-    },
-    ['localised_description'] = {
-      'item-description.rs-orikalkum-pickaxe',
-    },
     ['high_alch'] = 2000,
     ['low_alch'] = 1333,
     ['examine'] = 'An orikalkum pickaxe.',
@@ -914,12 +674,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/necronium_pickaxe.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-necronium-pickaxe',
-    },
-    ['localised_description'] = {
-      'item-description.rs-necronium-pickaxe',
-    },
     ['high_alch'] = 4000,
     ['low_alch'] = 2667,
     ['examine'] = 'A necronium pickaxe.',
@@ -936,12 +690,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/bane_pickaxe.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-bane-pickaxe',
-    },
-    ['localised_description'] = {
-      'item-description.rs-bane-pickaxe',
-    },
     ['high_alch'] = 8000,
     ['low_alch'] = 5333,
     ['examine'] = 'A bane pickaxe.',
@@ -958,12 +706,6 @@ return {
     },
     ['icon'] = '__RsMining__/graphics/icons/elder_rune_pickaxe.png',
     ['icon_size'] = 32,
-    ['localised_name'] = {
-      'item-name.rs-elder-rune-pickaxe',
-    },
-    ['localised_description'] = {
-      'item-description.rs-elder-rune-pickaxe',
-    },
     ['high_alch'] = 20000,
     ['low_alch'] = 13333,
     ['examine'] = 'An elder rune pickaxe.',

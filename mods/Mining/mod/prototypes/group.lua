@@ -21,7 +21,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "intermediate",
+    name = "mining-intermediate",
     order = "002-smithing-003-intermediates",
     group = "mining-and-smithing"
   },
