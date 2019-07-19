@@ -3,3 +3,4 @@
 - Added Mining mod
 - Added rs ore and bar items and recipes
 - Added cables and pickaxes
+- Changed some vanilla recipes

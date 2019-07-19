@@ -2,7 +2,7 @@ require("__RsUtility__.scripts.prototypes")
 
 local bronze_cable = {
   name = "rs-bronze-cable",
-  stack_size = 2000,
+  stack_size = 200,
   icon = "__RsMining__/graphics/icons/bronze-cable.png",
   icon_size = 32,
   subgroup = "mining-intermediate",
@@ -11,7 +11,7 @@ local bronze_cable = {
 
 local adamant_cable = {
   name = "rs-adamant-cable",
-  stack_size = 2000,
+  stack_size = 200,
   icon = "__RsMining__/graphics/icons/adamant-cable.png",
   icon_size = 32,
   subgroup = "mining-intermediate",
@@ -20,7 +20,7 @@ local adamant_cable = {
 
 local orikalkum_cable = {
   name = "rs-orikalkum-cable",
-  stack_size = 2000,
+  stack_size = 200,
   icon = "__RsMining__/graphics/icons/orikalkum-cable.png",
   icon_size = 32,
   subgroup = "mining-intermediate",
