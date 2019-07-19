@@ -6,6 +6,8 @@ end
 
 function get_prototype(name, prototype)
 
+  name = get_vanilla_name(name)
+
   if not data.raw[prototype][name] then
     data:extend({
       {type = prototype, name = name}

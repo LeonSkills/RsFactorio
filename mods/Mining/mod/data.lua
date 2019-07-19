@@ -6,3 +6,6 @@ require("prototypes.recipe.intermediate_recipe")
 require("prototypes.recipe.pickaxe_recipe")
 
 require("prototypes.group")
+
+require("prototypes.entity.particles")
+require("prototypes.entity.ore_resources")
