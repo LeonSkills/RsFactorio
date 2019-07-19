@@ -197,7 +197,9 @@
     "icon_size": 32,
     "high_alch": 500,
     "low_alch": 333,
-    "examine": "Used in Smithing (70)."
+    "examine": "Used in Smithing (70).",
+    "pictures": null,
+    "icon_mipmaps": null
   },
   "Necrite ore": {
     "group": "mining-and-smithing",

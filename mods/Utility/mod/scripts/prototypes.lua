@@ -41,7 +41,34 @@ function create_item(table)
   return prototype
 end
 
-function create_recipe(table) end
+function create_recipe(table)
+  table.name = get_vanilla_name(table.name)
+  for _, ingredients in pairs(table.ingredients) do
+    if ingredients["name"] then
+      ingredients["name"] = get_vanilla_name(ingredients["name"])
+    else
+      ingredients[1] = get_vanilla_name(ingredients[1])
+    end
+  end
+  table.result = get_vanilla_name(table.result)
+  for _, results in pairs(table.results) do
+    if results["name"] then
+      results["name"] = get_vanilla_name(results["name"])
+    else
+      results[1] = get_vanilla_name(results[1])
+    end
+  end
+  local prototype = get_prototype(table.name, "recipe")
+  -- merge tables
+  for k,v in pairs(table) do
+    if v == "nil" then
+      v = nil
+    end
+    prototype[k] = v
+  end
+
+  return prototype
+end
 
 --function create_prototype(params)
 ----function create_prototype(name, order, subgroup, stack_size, ingredients, energy_required, localised_name, localised_description, category, technology, hidden, is_entity, result_count)

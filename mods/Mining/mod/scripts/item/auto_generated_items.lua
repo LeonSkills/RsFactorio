@@ -210,6 +210,8 @@ return {
     ['high_alch'] = 500,
     ['low_alch'] = 333,
     ['examine'] = 'Used in Smithing (70).',
+    ['pictures'] = 'nil',
+    ['icon_mipmaps'] = 'nil',
   },
   ['Necrite ore'] = {
     ['group'] = 'mining-and-smithing',
