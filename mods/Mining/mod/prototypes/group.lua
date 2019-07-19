@@ -9,25 +9,31 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "ore",
+    name = "rs-ore",
     order = "001-mining-001-ores",
     group = "mining-and-smithing"
   },
   {
     type = "item-subgroup",
-    name = "bar",
+    name = "rs-bar",
     order = "002-smithing-001-bars",
     group = "mining-and-smithing"
   },
   {
     type = "item-subgroup",
-    name = "mining-intermediate",
+    name = "rs-clay",
+    order = "001-mining-003-clay",
+    group = "mining-and-smithing"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-mining-intermediate",
     order = "002-smithing-003-intermediates",
     group = "mining-and-smithing"
   },
   {
     type = "item-subgroup",
-    name = "pickaxe",
+    name = "rs-pickaxe",
     order = "002-smithing-004-pickaxe",
     group = "mining-and-smithing"
   }

@@ -1,5 +1,6 @@
 require("prototypes.item.items")
 require("prototypes.item.cables")
+require("prototypes.item.item_changes")
 
 require("prototypes.recipe.bar_recipe")
 require("prototypes.recipe.intermediate_recipe")

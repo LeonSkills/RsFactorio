@@ -33,6 +33,11 @@ local recipe_updates = {
       {replace_item = "iron-plate", with_item = "rs-bronze-bar"},
       {replace_item = "iron-gear-wheel", with_item = "rs-bronze-nails", amount = 5}
     }
+  },
+  ["stone-brick"] = {
+    to_replace = {
+      {replace_item = "stone", with_item = "rs-soft-clay"}
+    }
   }
 }
 

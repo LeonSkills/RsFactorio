@@ -5,7 +5,7 @@ local bronze_cable = {
   stack_size = 200,
   icon = "__RsMining__/graphics/icons/bronze-cable.png",
   icon_size = 32,
-  subgroup = "mining-intermediate",
+  subgroup = "rs-mining-intermediate",
   order = "cable-01"
 }
 
@@ -14,7 +14,7 @@ local adamant_cable = {
   stack_size = 200,
   icon = "__RsMining__/graphics/icons/adamant-cable.png",
   icon_size = 32,
-  subgroup = "mining-intermediate",
+  subgroup = "rs-mining-intermediate",
   order = "cable-02"
 }
 
@@ -23,7 +23,7 @@ local orikalkum_cable = {
   stack_size = 200,
   icon = "__RsMining__/graphics/icons/orikalkum-cable.png",
   icon_size = 32,
-  subgroup = "mining-intermediate",
+  subgroup = "rs-mining-intermediate",
   order = "cable-03"
 }
 

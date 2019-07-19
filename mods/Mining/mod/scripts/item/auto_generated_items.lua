@@ -1,9 +1,9 @@
 return {
   ['Clay'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-clay',
     ['stack_size'] = 50,
-    ['order'] = '01',
+    ['order'] = '001-clay',
     ['vanilla_name'] = 'stone',
     ['rs_name'] = 'clay',
     ['name'] = 'rs-clay',
@@ -20,7 +20,7 @@ return {
   },
   ['Tin ore'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = '02',
     ['rs_name'] = 'tin_ore',
@@ -36,7 +36,7 @@ return {
   },
   ['Copper ore'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = '02',
     ['vanilla_name'] = 'copper-ore',
@@ -55,7 +55,7 @@ return {
   },
   ['Iron ore'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 10,
     ['vanilla_name'] = 'iron-ore',
@@ -74,7 +74,7 @@ return {
   },
   ['Coal'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 19,
     ['fuel_category'] = 'chemical',
@@ -96,7 +96,7 @@ return {
   },
   ['Mithril ore'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 30,
     ['rs_name'] = 'mithril_ore',
@@ -112,7 +112,7 @@ return {
   },
   ['Luminite'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 39,
     ['fuel_category'] = 'chemical',
@@ -130,7 +130,7 @@ return {
   },
   ['Adamantite ore'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 40,
     ['rs_name'] = 'adamantite_ore',
@@ -146,7 +146,7 @@ return {
   },
   ['Runite ore'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 50,
     ['rs_name'] = 'runite_ore',
@@ -162,7 +162,7 @@ return {
   },
   ['Drakolith'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 59,
     ['fuel_category'] = 'chemical',
@@ -180,7 +180,7 @@ return {
   },
   ['Orichalcite ore'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 60,
     ['rs_name'] = 'orichalcite_ore',
@@ -196,7 +196,7 @@ return {
   },
   ['Phasmatite'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 69,
     ['vanilla_name'] = 'uranium-ore',
@@ -215,7 +215,7 @@ return {
   },
   ['Necrite ore'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 70,
     ['rs_name'] = 'necrite_ore',
@@ -231,7 +231,7 @@ return {
   },
   ['Banite ore'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 80,
     ['rs_name'] = 'banite_ore',
@@ -247,7 +247,7 @@ return {
   },
   ['Light animica'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 90,
     ['rs_name'] = 'light_animica',
@@ -263,7 +263,7 @@ return {
   },
   ['Dark animica'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'ore',
+    ['subgroup'] = 'rs-ore',
     ['stack_size'] = 50,
     ['order'] = 90,
     ['rs_name'] = 'dark_animica',
@@ -279,9 +279,9 @@ return {
   },
   ['Soft clay'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'mining-intermediate',
+    ['subgroup'] = 'rs-clay',
     ['stack_size'] = 100,
-    ['order'] = 1,
+    ['order'] = '002-soft',
     ['rs_name'] = 'soft_clay',
     ['name'] = 'rs-soft-clay',
     ['type'] = 'item',
@@ -295,7 +295,7 @@ return {
   },
   ['Bronze bar'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'bar',
+    ['subgroup'] = 'rs-bar',
     ['stack_size'] = 100,
     ['order'] = 1,
     ['vanilla_name'] = 'copper-plate',
@@ -312,7 +312,7 @@ return {
   },
   ['Iron bar'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'bar',
+    ['subgroup'] = 'rs-bar',
     ['stack_size'] = 100,
     ['order'] = 10,
     ['vanilla_name'] = 'iron-plate',
@@ -329,7 +329,7 @@ return {
   },
   ['Steel bar'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'bar',
+    ['subgroup'] = 'rs-bar',
     ['stack_size'] = 100,
     ['order'] = 20,
     ['vanilla_name'] = 'steel-plate',
@@ -346,7 +346,7 @@ return {
   },
   ['Mithril bar'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'bar',
+    ['subgroup'] = 'rs-bar',
     ['stack_size'] = 100,
     ['order'] = 30,
     ['rs_name'] = 'mithril_bar',
@@ -362,7 +362,7 @@ return {
   },
   ['Adamant bar'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'bar',
+    ['subgroup'] = 'rs-bar',
     ['stack_size'] = 100,
     ['order'] = 40,
     ['rs_name'] = 'adamant_bar',
@@ -378,7 +378,7 @@ return {
   },
   ['Rune bar'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'bar',
+    ['subgroup'] = 'rs-bar',
     ['stack_size'] = 100,
     ['order'] = 50,
     ['rs_name'] = 'rune_bar',
@@ -394,7 +394,7 @@ return {
   },
   ['Orikalkum bar'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'bar',
+    ['subgroup'] = 'rs-bar',
     ['stack_size'] = 100,
     ['order'] = 60,
     ['rs_name'] = 'orikalkum_bar',
@@ -410,7 +410,7 @@ return {
   },
   ['Necronium bar'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'bar',
+    ['subgroup'] = 'rs-bar',
     ['stack_size'] = 100,
     ['order'] = 70,
     ['rs_name'] = 'necronium_bar',
@@ -426,7 +426,7 @@ return {
   },
   ['Bane bar'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'bar',
+    ['subgroup'] = 'rs-bar',
     ['stack_size'] = 100,
     ['order'] = 80,
     ['rs_name'] = 'bane_bar',
@@ -442,7 +442,7 @@ return {
   },
   ['Elder rune bar'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'bar',
+    ['subgroup'] = 'rs-bar',
     ['stack_size'] = 100,
     ['order'] = 90,
     ['rs_name'] = 'elder_rune_bar',
@@ -458,7 +458,7 @@ return {
   },
   ['Bronze nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'mining-intermediate',
+    ['subgroup'] = 'rs-mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-1',
     ['rs_name'] = 'bronze_nails',
@@ -474,7 +474,7 @@ return {
   },
   ['Iron nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'mining-intermediate',
+    ['subgroup'] = 'rs-mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-10',
     ['rs_name'] = 'iron_nails',
@@ -490,7 +490,7 @@ return {
   },
   ['Steel nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'mining-intermediate',
+    ['subgroup'] = 'rs-mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-20',
     ['rs_name'] = 'steel_nails',
@@ -506,7 +506,7 @@ return {
   },
   ['Mithril nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'mining-intermediate',
+    ['subgroup'] = 'rs-mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-30',
     ['rs_name'] = 'mithril_nails',
@@ -522,7 +522,7 @@ return {
   },
   ['Adamant nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'mining-intermediate',
+    ['subgroup'] = 'rs-mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-40',
     ['rs_name'] = 'adamant_nails',
@@ -538,7 +538,7 @@ return {
   },
   ['Rune nails'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'mining-intermediate',
+    ['subgroup'] = 'rs-mining-intermediate',
     ['stack_size'] = 2000,
     ['order'] = 'nails-50',
     ['rs_name'] = 'rune_nails',
@@ -554,7 +554,7 @@ return {
   },
   ['Bronze pickaxe'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'pickaxe',
+    ['subgroup'] = 'rs-pickaxe',
     ['stack_size'] = 50,
     ['order'] = 1,
     ['rs_name'] = 'bronze_pickaxe',
@@ -570,7 +570,7 @@ return {
   },
   ['Iron pickaxe'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'pickaxe',
+    ['subgroup'] = 'rs-pickaxe',
     ['stack_size'] = 50,
     ['order'] = 10,
     ['rs_name'] = 'iron_pickaxe',
@@ -586,7 +586,7 @@ return {
   },
   ['Steel pickaxe'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'pickaxe',
+    ['subgroup'] = 'rs-pickaxe',
     ['stack_size'] = 50,
     ['order'] = 20,
     ['rs_name'] = 'steel_pickaxe',
@@ -602,7 +602,7 @@ return {
   },
   ['Mithril pickaxe'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'pickaxe',
+    ['subgroup'] = 'rs-pickaxe',
     ['stack_size'] = 50,
     ['order'] = 30,
     ['rs_name'] = 'mithril_pickaxe',
@@ -618,7 +618,7 @@ return {
   },
   ['Adamant pickaxe'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'pickaxe',
+    ['subgroup'] = 'rs-pickaxe',
     ['stack_size'] = 50,
     ['order'] = 40,
     ['rs_name'] = 'adamant_pickaxe',
@@ -634,7 +634,7 @@ return {
   },
   ['Rune pickaxe'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'pickaxe',
+    ['subgroup'] = 'rs-pickaxe',
     ['stack_size'] = 50,
     ['order'] = 50,
     ['rs_name'] = 'rune_pickaxe',
@@ -650,7 +650,7 @@ return {
   },
   ['Orikalkum pickaxe'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'pickaxe',
+    ['subgroup'] = 'rs-pickaxe',
     ['stack_size'] = 50,
     ['order'] = 60,
     ['rs_name'] = 'orikalkum_pickaxe',
@@ -666,7 +666,7 @@ return {
   },
   ['Necronium pickaxe'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'pickaxe',
+    ['subgroup'] = 'rs-pickaxe',
     ['stack_size'] = 50,
     ['order'] = 70,
     ['rs_name'] = 'necronium_pickaxe',
@@ -682,7 +682,7 @@ return {
   },
   ['Bane pickaxe'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'pickaxe',
+    ['subgroup'] = 'rs-pickaxe',
     ['stack_size'] = 50,
     ['order'] = 80,
     ['rs_name'] = 'bane_pickaxe',
@@ -698,7 +698,7 @@ return {
   },
   ['Elder rune pickaxe'] = {
     ['group'] = 'mining-and-smithing',
-    ['subgroup'] = 'pickaxe',
+    ['subgroup'] = 'rs-pickaxe',
     ['stack_size'] = 50,
     ['order'] = 90,
     ['rs_name'] = 'elder_rune_pickaxe',
