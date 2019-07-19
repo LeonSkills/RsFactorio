@@ -5,3 +5,4 @@
 - Added cables and pickaxes
 - Changed some vanilla recipes
 - Added resources to auto generation
+- Added resources to world presets
