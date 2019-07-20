@@ -10,3 +10,6 @@ require("prototypes.group")
 
 require("prototypes.entity.particles")
 require("prototypes.entity.ore_resources")
+
+
+require("prototypes.technology.bar_technology")

@@ -1,12 +1,8 @@
 # COPYRIGHT LeonSkills 2019.
 
-import os
-# Loop over all folders in /mod
-
 import os, json
 import shutil
 import time
-from distutils.dir_util import copy_tree
 
 
 def main():
@@ -80,7 +76,7 @@ def _read_mod_info():
 
 
 def _update_mod(folder_name, mod_folder, utility_version=None):
-    print(folder_name)
+    print("Updating", folder_name)
     info_file = os.path.join(mod_folder, "mod", "info.json")
 
     # Get current version number and mod name
@@ -92,7 +88,6 @@ def _update_mod(folder_name, mod_folder, utility_version=None):
     folder_modified_time = get_last_modification_time(mod_folder)
     version_modified_time = os.path.getmtime(info_file)
     # Nothing has changed in this mod since last modification. Skip
-    print(time.ctime(version_modified_time), time.ctime(folder_modified_time))
     if version_modified_time == folder_modified_time:
         return version
 

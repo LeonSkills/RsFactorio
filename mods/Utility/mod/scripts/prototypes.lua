@@ -1,7 +1,13 @@
 local vanilla_conversions = require("__RsUtility__.data.vanilla_names")
+local science_packs = require("__RsUtility__.data.science_packs")
+require("utility")
 
 function get_vanilla_name(string)
   return vanilla_conversions[string] or string
+end
+
+function get_science_pack(string)
+  return get_vanilla_name(science_packs[string])
 end
 
 function get_prototype(name, prototype)
@@ -25,15 +31,22 @@ function get_prototype(name, prototype)
   return proto
 end
 
-function create_item(table)
-  table.localised_name = table.localised_name or {"item-name." .. table.name}
-  table.localised_description = table.localised_description or {"item-description." .. table.name}
-  table.name = get_vanilla_name(table.name)
+function create_item(item)
+  item.localised_name = item.localised_name or { "item-name." .. item.name}
+  item.localised_description = item.localised_description or { "item-description." .. item.name}
+  item.name = get_vanilla_name(item.name)
 
-  local prototype = get_prototype(table.name, "item")
+  if contains(science_packs, item.name) then
+    item.type = "tool"
+    item.durability = item.durability or 1
+  else
+    item.type = "item"
+  end
+
+  local prototype = get_prototype(item.name, item.type)
 
   -- merge tables
-  for k,v in pairs(table) do
+  for k,v in pairs(item) do
     if v == "nil" then
       v = nil
     end
@@ -43,26 +56,26 @@ function create_item(table)
   return prototype
 end
 
-function create_recipe(table)
-  table.name = get_vanilla_name(table.name)
-  for _, ingredients in pairs(table.ingredients) do
+function create_recipe(recipe)
+  recipe.name = get_vanilla_name(recipe.name)
+  for _, ingredients in pairs(recipe.ingredients) do
     if ingredients["name"] then
       ingredients["name"] = get_vanilla_name(ingredients["name"])
     else
       ingredients[1] = get_vanilla_name(ingredients[1])
     end
   end
-  table.result = get_vanilla_name(table.result)
-  for _, results in pairs(table.results) do
+  recipe.result = get_vanilla_name(recipe.result)
+  for _, results in pairs(recipe.results) do
     if results["name"] then
       results["name"] = get_vanilla_name(results["name"])
     else
       results[1] = get_vanilla_name(results[1])
     end
   end
-  local prototype = get_prototype(table.name, "recipe")
+  local prototype = get_prototype(recipe.name, "recipe")
   -- merge tables
-  for k,v in pairs(table) do
+  for k,v in pairs(recipe) do
     if v == "nil" then
       v = nil
     end
@@ -72,6 +85,49 @@ function create_recipe(table)
   return prototype
 end
 
+function create_technology(technology)
+  technology.name = get_vanilla_name(technology.name)
+  local prototype = get_prototype(technology.name, "technology")
+  technology.recipes_to_unlock = technology.recipes_to_unlock or {}
+  technology.extra_effects = technology.extra_effects or {}
+  technology.extra_prerequisites = technology.extra_prerequisites or {}
+  for _, recipe in pairs(technology.recipes_to_unlock) do
+    recipe = get_vanilla_name(recipe)
+    local recipe_proto = data.raw.recipe[recipe]
+    recipe_proto.enabled = false
+    if recipe_proto.normal then
+      recipe_proto.normal.enabled = false
+    end
+    if recipe_proto.expensive then
+      recipe_proto.expensive.enabled = false
+    end
+    table.insert(prototype.effects ,{ type = "unlock-recipe", recipe=recipe})
+  end
+  for _, effect in pairs(technology.extra_effects) do
+    table.insert(prototype.effects, effect)
+  end
+  for _, prerequisite in pairs(technology.extra_prerequisites) do
+    table.insert(prototype.prerequisites, get_vanilla_name(prerequisite))
+  end
+
+  for i, science_pack in pairs(technology.unit.ingredients) do
+    science_pack.name = get_science_pack(science_pack.name)
+    if not science_pack.name then
+      technology.unit.ingredients[i] = nil
+    end
+  end
+
+    -- merge tables
+  for k,v in pairs(technology) do
+    if v == "nil" then
+      v = nil
+    end
+    prototype[k] = v
+  end
+
+  return prototype
+
+end
 --function create_prototype(params)
 ----function create_prototype(name, order, subgroup, stack_size, ingredients, energy_required, localised_name, localised_description, category, technology, hidden, is_entity, result_count)
 --
