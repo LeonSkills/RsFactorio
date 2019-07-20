@@ -10,7 +10,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/clay.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/clay.png',
     ['icon_size'] = 32,
     ['high_alch'] = 0,
     ['low_alch'] = 0,
@@ -28,7 +28,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/tin_ore.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/tin_ore.png',
     ['icon_size'] = 32,
     ['high_alch'] = 10,
     ['low_alch'] = 6,
@@ -45,7 +45,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/copper_ore.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/copper_ore.png',
     ['icon_size'] = 32,
     ['high_alch'] = 10,
     ['low_alch'] = 6,
@@ -64,7 +64,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/iron_ore.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/iron_ore.png',
     ['icon_size'] = 32,
     ['high_alch'] = 15,
     ['low_alch'] = 10,
@@ -85,7 +85,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/coal.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/coal.png',
     ['icon_size'] = 32,
     ['high_alch'] = 25,
     ['low_alch'] = 16,
@@ -104,7 +104,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/mithril_ore.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/mithril_ore.png',
     ['icon_size'] = 32,
     ['high_alch'] = 35,
     ['low_alch'] = 23,
@@ -122,7 +122,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/luminite.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/luminite.png',
     ['icon_size'] = 32,
     ['high_alch'] = 50,
     ['low_alch'] = 33,
@@ -138,7 +138,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/adamantite_ore.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/adamantite_ore.png',
     ['icon_size'] = 32,
     ['high_alch'] = 50,
     ['low_alch'] = 33,
@@ -154,7 +154,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/runite_ore.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/runite_ore.png',
     ['icon_size'] = 32,
     ['high_alch'] = 125,
     ['low_alch'] = 83,
@@ -172,7 +172,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/drakolith.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/drakolith.png',
     ['icon_size'] = 32,
     ['high_alch'] = 250,
     ['low_alch'] = 166,
@@ -188,7 +188,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/orichalcite_ore.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/orichalcite_ore.png',
     ['icon_size'] = 32,
     ['high_alch'] = 250,
     ['low_alch'] = 166,
@@ -205,7 +205,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/phasmatite.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/phasmatite.png',
     ['icon_size'] = 32,
     ['high_alch'] = 500,
     ['low_alch'] = 333,
@@ -223,7 +223,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/necrite_ore.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/necrite_ore.png',
     ['icon_size'] = 32,
     ['high_alch'] = 500,
     ['low_alch'] = 333,
@@ -239,7 +239,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/banite_ore.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/banite_ore.png',
     ['icon_size'] = 32,
     ['high_alch'] = 640,
     ['low_alch'] = 426,
@@ -255,7 +255,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/light_animica.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/light_animica.png',
     ['icon_size'] = 32,
     ['high_alch'] = 1040,
     ['low_alch'] = 693,
@@ -271,7 +271,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/dark_animica.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/dark_animica.png',
     ['icon_size'] = 32,
     ['high_alch'] = 1040,
     ['low_alch'] = 693,
@@ -287,7 +287,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/soft_clay.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/soft_clay.png',
     ['icon_size'] = 32,
     ['high_alch'] = 1,
     ['low_alch'] = 0,
@@ -304,7 +304,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/bronze_bar.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/bronze_bar.png',
     ['icon_size'] = 32,
     ['high_alch'] = 27,
     ['low_alch'] = 18,
@@ -321,7 +321,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/iron_bar.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/iron_bar.png',
     ['icon_size'] = 32,
     ['high_alch'] = 35,
     ['low_alch'] = 23,
@@ -338,7 +338,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/steel_bar.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/steel_bar.png',
     ['icon_size'] = 32,
     ['high_alch'] = 50,
     ['low_alch'] = 33,
@@ -354,7 +354,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/mithril_bar.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/mithril_bar.png',
     ['icon_size'] = 32,
     ['high_alch'] = 75,
     ['low_alch'] = 50,
@@ -370,7 +370,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/adamant_bar.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/adamant_bar.png',
     ['icon_size'] = 32,
     ['high_alch'] = 100,
     ['low_alch'] = 66,
@@ -386,7 +386,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/rune_bar.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/rune_bar.png',
     ['icon_size'] = 32,
     ['high_alch'] = 250,
     ['low_alch'] = 166,
@@ -402,7 +402,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/orikalkum_bar.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/orikalkum_bar.png',
     ['icon_size'] = 32,
     ['high_alch'] = 500,
     ['low_alch'] = 333,
@@ -418,7 +418,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/necronium_bar.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/necronium_bar.png',
     ['icon_size'] = 32,
     ['high_alch'] = 1000,
     ['low_alch'] = 666,
@@ -434,7 +434,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/bane_bar.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/bane_bar.png',
     ['icon_size'] = 32,
     ['high_alch'] = 2000,
     ['low_alch'] = 1333,
@@ -450,7 +450,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/elder_rune_bar.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/elder_rune_bar.png',
     ['icon_size'] = 32,
     ['high_alch'] = 5000,
     ['low_alch'] = 3333,
@@ -466,7 +466,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/bronze_nails.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/bronze_nails.png',
     ['icon_size'] = 32,
     ['high_alch'] = 1,
     ['low_alch'] = 0,
@@ -482,7 +482,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/iron_nails.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/iron_nails.png',
     ['icon_size'] = 32,
     ['high_alch'] = 1,
     ['low_alch'] = 0,
@@ -498,7 +498,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/steel_nails.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/steel_nails.png',
     ['icon_size'] = 32,
     ['high_alch'] = 1,
     ['low_alch'] = 1,
@@ -514,7 +514,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/mithril_nails.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/mithril_nails.png',
     ['icon_size'] = 32,
     ['high_alch'] = 2,
     ['low_alch'] = 1,
@@ -530,7 +530,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/adamant_nails.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/adamant_nails.png',
     ['icon_size'] = 32,
     ['high_alch'] = 3,
     ['low_alch'] = 2,
@@ -546,7 +546,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/rune_nails.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/rune_nails.png',
     ['icon_size'] = 32,
     ['high_alch'] = 6,
     ['low_alch'] = 4,
@@ -562,7 +562,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/bronze_pickaxe.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/bronze_pickaxe.png',
     ['icon_size'] = 32,
     ['high_alch'] = 100,
     ['low_alch'] = 67,
@@ -578,7 +578,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/iron_pickaxe.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/iron_pickaxe.png',
     ['icon_size'] = 32,
     ['high_alch'] = 150,
     ['low_alch'] = 100,
@@ -594,7 +594,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/steel_pickaxe.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/steel_pickaxe.png',
     ['icon_size'] = 32,
     ['high_alch'] = 200,
     ['low_alch'] = 133,
@@ -610,7 +610,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/mithril_pickaxe.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/mithril_pickaxe.png',
     ['icon_size'] = 32,
     ['high_alch'] = 300,
     ['low_alch'] = 200,
@@ -626,7 +626,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/adamant_pickaxe.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/adamant_pickaxe.png',
     ['icon_size'] = 32,
     ['high_alch'] = 400,
     ['low_alch'] = 267,
@@ -642,7 +642,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/rune_pickaxe.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/rune_pickaxe.png',
     ['icon_size'] = 32,
     ['high_alch'] = 1000,
     ['low_alch'] = 667,
@@ -658,7 +658,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/orikalkum_pickaxe.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/orikalkum_pickaxe.png',
     ['icon_size'] = 32,
     ['high_alch'] = 2000,
     ['low_alch'] = 1333,
@@ -674,7 +674,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/necronium_pickaxe.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/necronium_pickaxe.png',
     ['icon_size'] = 32,
     ['high_alch'] = 4000,
     ['low_alch'] = 2667,
@@ -690,7 +690,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/bane_pickaxe.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/bane_pickaxe.png',
     ['icon_size'] = 32,
     ['high_alch'] = 8000,
     ['low_alch'] = 5333,
@@ -706,7 +706,7 @@ return {
     ['type'] = 'item',
     ['flags'] = {
     },
-    ['icon'] = '__RsMining__/graphics/icons/elder_rune_pickaxe.png',
+    ['icon'] = '__RsMining__/graphics/icons/auto_generated/elder_rune_pickaxe.png',
     ['icon_size'] = 32,
     ['high_alch'] = 20000,
     ['low_alch'] = 13333,

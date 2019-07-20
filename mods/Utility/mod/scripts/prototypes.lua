@@ -85,12 +85,16 @@ function create_recipe(recipe)
   return prototype
 end
 
-function create_technology(technology)
+function create_technology(technology, overwrite_effects)
+  overwrite_effects = overwrite_effects or false
   technology.name = get_vanilla_name(technology.name)
   local prototype = get_prototype(technology.name, "technology")
   technology.recipes_to_unlock = technology.recipes_to_unlock or {}
   technology.extra_effects = technology.extra_effects or {}
   technology.extra_prerequisites = technology.extra_prerequisites or {}
+  if overwrite_effects then
+    prototype.effects = {}
+  end
   for _, recipe in pairs(technology.recipes_to_unlock) do
     recipe = get_vanilla_name(recipe)
     local recipe_proto = data.raw.recipe[recipe]
@@ -110,10 +114,21 @@ function create_technology(technology)
     table.insert(prototype.prerequisites, get_vanilla_name(prerequisite))
   end
 
-  for i, science_pack in pairs(technology.unit.ingredients) do
-    science_pack.name = get_science_pack(science_pack.name)
-    if not science_pack.name then
-      technology.unit.ingredients[i] = nil
+  technology.unit.ingredients = {}
+  for skill, level in pairs(technology.levels) do
+    local highest_pack = nil
+    for i=0, level-1, 1 do
+      local science_pack = science_packs[skill .. "-" .. i]
+      if science_pack then
+        science_pack = get_vanilla_name(science_pack)
+        table.insert(technology.unit.ingredients, {science_pack, 1})
+        if data.raw.technology[science_pack] then
+          highest_pack = science_pack
+        end
+      end
+    end
+    if highest_pack then
+      table.insert(prototype.prerequisites, highest_pack)
     end
   end
 

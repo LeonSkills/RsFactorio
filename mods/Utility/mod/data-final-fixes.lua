@@ -1,0 +1,1 @@
+require("prototypes.clean_up_technologies")

@@ -1,4 +1,5 @@
 require("prototypes.item.items")
+require("prototypes.item.stone_spirits")
 require("prototypes.item.cables")
 require("prototypes.item.item_changes")
 
@@ -12,4 +13,6 @@ require("prototypes.entity.particles")
 require("prototypes.entity.ore_resources")
 
 
-require("prototypes.technology.bar_technology")
+require("prototypes.technology.pickaxe_technology")
+require("prototypes.technology.smelting_technology")
+require("prototypes.technology.processing_technology")

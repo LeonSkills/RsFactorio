@@ -37,7 +37,7 @@ def main():
 
         locale_data = {}
 
-        icons_folder = os.path.join(mod_folder, "mod", "graphics", "icons")
+        icons_folder = os.path.join(mod_folder, "mod", "graphics", "icons", "auto_generated")
         if not os.path.exists(icons_folder):
             os.makedirs(icons_folder)
 
@@ -58,7 +58,7 @@ def main():
                 data["name"] = "rs-" + item_name.replace(" ", "-").lower()
                 data["type"] = "item"
                 data["flags"] = {}
-                data["icon"] = "__" + mod_name + "__/graphics/icons/" + rs_name + ".png"
+                data["icon"] = "__" + mod_name + "__/graphics/icons/auto_generated/" + rs_name + ".png"
                 data["icon_size"] = 32
 
                 for key, value in rs_data.items():

@@ -1,8 +1,16 @@
-## [0.0.1] - 2019-07-06 - LeonSkills
+## [0.1.0] - 2019-07-22 - LeonSkills
 ### Added
-- Added Mining mod
-- Added rs ore and bar items and recipes
+- Added stone spirits as science packs
+- Added bar and pickaxe technologies
+
+[0.1.0] - 2019-07-19 - LeonSkills
+### Added
 - Added cables and pickaxes
 - Changed some vanilla recipes
 - Added resources to auto generation
 - Added resources to world presets
+
+## [0.1.0] - 2019-07-06 - LeonSkills
+### Added
+- Added Mining mod
+- Added rs ore and bar items and recipes

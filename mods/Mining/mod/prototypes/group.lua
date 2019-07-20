@@ -27,6 +27,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "rs-stone-spirit",
+    order = "001-mining-004-stone-spirits",
+    group = "mining-and-smithing"
+  },
+  {
+    type = "item-subgroup",
     name = "rs-mining-intermediate",
     order = "002-smithing-003-intermediates",
     group = "mining-and-smithing"
