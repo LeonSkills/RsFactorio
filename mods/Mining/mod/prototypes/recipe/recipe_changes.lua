@@ -34,6 +34,12 @@ local recipe_updates = {
       {replace_item = "iron-gear-wheel", with_item = "rs-bronze-nails", amount = 5}
     }
   },
+  ["burner-mining-drill"] = {
+    to_replace = {
+      {replace_item = "iron-plate", with_item = "rs-bronze-bar"},
+      {replace_item = "iron-gear-wheel", with_item = "rs-clay"}
+    }
+  },
   ["stone-brick"] = {
     to_replace = {
       {replace_item = "stone", with_item = "rs-soft-clay"}
@@ -47,7 +53,7 @@ for recipe_name, recipe_data in pairs(recipe_updates) do
     if recipe_data.to_replace ~= nil then
       for _, mode in pairs({recipe, recipe.normal, recipe.expensive}) do
         if mode ~= nil and mode.ingredients ~= nil then
-          for _, ingredient in pairs(mode.ingredients) do
+          for ingredient_index, ingredient in pairs(mode.ingredients) do
             for _, item in pairs(recipe_data.to_replace) do
               if ingredient.name ~= nil and ingredient.name == item.replace_item then
                 ingredient.name = get_vanilla_name(item.with_item)

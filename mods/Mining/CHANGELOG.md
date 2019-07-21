@@ -1,9 +1,10 @@
-## [0.1.0] - 2019-07-22 - LeonSkills
+## [0.1.0] - 2019-07-21 - LeonSkills
 ### Added
 - Added stone spirits as science packs
 - Added bar and pickaxe technologies
+- Added stone spirit recipes and technologies. Shuffled around technologies
 
-[0.1.0] - 2019-07-19 - LeonSkills
+##[0.1.0] - 2019-07-19 - LeonSkills
 ### Added
 - Added cables and pickaxes
 - Changed some vanilla recipes

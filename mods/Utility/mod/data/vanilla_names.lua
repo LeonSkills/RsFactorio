@@ -8,5 +8,5 @@ return {
   ["rs-steel-bar"] = "steel-plate",
   ["rs-clay"] = "stone",
   ["rs-bronze-cable"] = "copper-cable",
-  ["rs-steel-processing"] = "steel-processing"
+  ["rs-steel-bar"] = "steel-processing"
 }

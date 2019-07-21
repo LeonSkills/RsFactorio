@@ -3,7 +3,6 @@ local science_packs = require("__RsUtility__.data.science_packs")
 
 local lab_item = {
   name = "rs-burner-lab",
-  flags = {"hidden"},
   subgroup = "production-machine",
   order = "g[burner-lab]",
   place_result = "rs-burner-lab",
