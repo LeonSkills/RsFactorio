@@ -1,26 +1,45 @@
 require("__RsUtility__.scripts.prototypes")
 
 
-
-local soft_clay = {
-  name = "rs-soft-clay",
-  category = "crafting-with-fluid",
-  ingredients = {
-    {"rs-clay", 1},
-    {type="fluid", name="water", amount=100}
-  },
-  results = {
-    {"rs-soft-clay", 1}
-  },
-  energy_required = 0.6
-}
-create_recipe(soft_clay)
-
-require("__RsUtility__.scripts.prototypes")
-
-
 -- Recipes to update that require new items
 local recipe_updates = {
+  ["uranium-fuel-cell"] = {
+    to_replace = {
+      {replace_item = "iron-plate", with_item = "rs-necronium-bar", amount=100}
+    }
+  },
+  ["advanced-circuit"] = {
+    to_replace = {
+      {replace_item = "copper-cable", with_item = "rs-adamant-cable"}
+    }
+  },
+  ["processing-unit"] = {
+    to_add = {
+      {"rs-orikalkum-cable", 5}
+    }
+  },
+  ["green-cable"] = {
+    to_replace = {
+      {replace_item = "copper-cable", with_item = "rs-adamant-cable"}
+    }
+  },
+  ["red-cable"] = {
+    to_replace = {
+      {replace_item = "copper-cable", with_item = "rs-orikalkum-cable"}
+    }
+  },
+  ["burner-inserter"] = {
+    to_replace = {
+      {replace_item = "iron-plate", with_item = "rs-bronze-bar"},
+      {replace_item = "iron-gear-wheel", with_item = "rs-bronze-nails", amount = 5}
+    }
+  },
+  ["burner-mining-drill"] = {
+    to_replace = {
+      {replace_item = "iron-plate", with_item = "rs-bronze-bar"},
+      {replace_item = "iron-gear-wheel", with_item = "rs-clay"}
+    }
+  },
   ["stone-brick"] = {
     to_replace = {
       {replace_item = "stone", with_item = "rs-soft-clay"}

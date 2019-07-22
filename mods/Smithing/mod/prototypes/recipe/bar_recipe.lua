@@ -155,17 +155,3 @@ local elder_rune_bar = {
   energy_required = 24
 }
 create_recipe(elder_rune_bar)
-
-local soft_clay = {
-  name = "rs-soft-clay",
-  category = "crafting-with-fluid",
-  ingredients = {
-    {"rs-clay", 1},
-    {type="fluid", name="water", amount=100}
-  },
-  results = {
-    {"rs-soft-clay", 1}
-  },
-  energy_required = 0.6
-}
-create_recipe(soft_clay)

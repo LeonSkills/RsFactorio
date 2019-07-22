@@ -51,6 +51,12 @@ def main():
             if not os.path.isfile(icon_location):
                 add_icon(icon_location, rs_name)
 
+            icon = "__" + mod_name + "__/graphics/icons/auto_generated/" + rs_name + ".png"
+            if "icon" in data and data["icon"] != icon:
+                data["icon"] = icon
+                data["icon_size"] = 32
+                item_data_changed = True
+
             if "name" not in data:
                 data["rs_name"] = rs_name
                 rs_data = get_rs_data(rs_name)
@@ -58,8 +64,6 @@ def main():
                 data["name"] = "rs-" + item_name.replace(" ", "-").lower()
                 data["type"] = "item"
                 data["flags"] = {}
-                data["icon"] = "__" + mod_name + "__/graphics/icons/auto_generated/" + rs_name + ".png"
-                data["icon_size"] = 32
 
                 for key, value in rs_data.items():
                     data[key] = value
