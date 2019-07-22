@@ -5,13 +5,21 @@ require("__RsUtility__.scripts.utility")
 
 for item_name, item_data in pairs(data.raw.furnace) do
   if contains(item_data.crafting_categories, "smelting") then
-    local smelter_item = table.deepcopy(item_data)
-    smelter_item.type = "assembling-machine"
-    smelter_item.name = item_name
-    smelter_item.ingredient_count = 11
-    smelter_item.minable.result = item_name
+    local smelter_furnace = table.deepcopy(item_data)
+    local smelter_item = data.raw.item[smelter_furnace.name]
+    local smelter_recipe = data.raw.recipe[smelter_furnace.name]
+    smelter_furnace.type = "assembling-machine"
+    smelter_furnace.name = item_name
+    smelter_furnace.ingredient_count = 11
+    smelter_furnace.minable.result = item_name
+    smelter_furnace.subgroup = "rs-smithing-assembling-machine"
+    smelter_furnace.order = "rs-020-".. (smelter_furnace.order or smelter_item.order or smelter_recipe.order)
     data.raw.furnace[item_name] = nil
-    data:extend({ smelter_item })
+    data:extend({ smelter_furnace })
+    smelter_item.order = smelter_furnace.order
+    smelter_item.subgroup = smelter_furnace.subgroup
+    smelter_recipe.order = smelter_furnace.order
+    smelter_recipe.subgroup = smelter_furnace.subgroup
   end
 end
 

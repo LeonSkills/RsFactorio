@@ -9,20 +9,14 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "rs-ore",
-    order = "001-mining-001-ores",
-    group = "rs-smithing"
-  },
-  {
-    type = "item-subgroup",
     name = "rs-bar",
-    order = "002-smithing-001-bars",
+    order = "021-smithing-001-bars",
     group = "rs-smithing"
   },
   {
     type = "item-subgroup",
     name = "rs-smithing-intermediate",
-    order = "002-smithing-003-intermediates",
+    order = "022-smithing-003-intermediates",
     group = "rs-smithing"
   },
   {
@@ -30,5 +24,11 @@ data:extend({
     name = "rs-pickaxe",
     order = "002-smithing-004-pickaxe",
     group = "rs-mining"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-smithing-assembling-machine",
+    order = "010-assembling-machine",
+    group = "rs-smithing"
   }
 })
