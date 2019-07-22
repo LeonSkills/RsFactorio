@@ -1,0 +1,1 @@
+require("prototypes.entity.ore_resources_final_fixes")

@@ -1,12 +1,8 @@
 # COPYRIGHT LeonSkills 2019.
 
-import os
-# Loop over all folders in /mod
-
 import os, json
 import shutil
 import time
-from distutils.dir_util import copy_tree
 
 
 def main():
@@ -54,6 +50,9 @@ def copy_mod(from_folder, to_folder):
 
 
 def get_last_modification_time(file):
+    # We ignore auto generated files.
+    if "auto_generated" in file:
+        return 0
     if os.path.isfile(file):
         return os.path.getmtime(file)
     return max([get_last_modification_time(os.path.join(file, sub_file)) for sub_file in os.listdir(file)] or [0])
@@ -77,7 +76,7 @@ def _read_mod_info():
 
 
 def _update_mod(folder_name, mod_folder, utility_version=None):
-    print(folder_name)
+    print("Updating", folder_name)
     info_file = os.path.join(mod_folder, "mod", "info.json")
 
     # Get current version number and mod name
@@ -105,9 +104,10 @@ def _update_mod(folder_name, mod_folder, utility_version=None):
     if is_changed:
         # increase version number
         version_split = version.split(".")
-        print(version_split)
         version_split[2] = str(int(version_split[2]) + 1)
         new_version = ".".join(version_split)
+
+        print("New version for " + mod_name + ": " + new_version)
 
         new_factorio_mod_folder = os.path.join(appdata, "Factorio", "mods", mod_name + "_" + new_version)
 
@@ -123,7 +123,7 @@ def _update_mod(folder_name, mod_folder, utility_version=None):
             mod_info["homepage"] = "https://github.com/LeonSkills/RsFactorio/tree/master/" + folder_name
             mod_info["factorio_version"] = "0.17"
             if utility_version is not None:
-                mod_info["dependencies"].append("Utility >= " + utility_version)
+                mod_info["dependencies"].append("RsUtility >= " + utility_version)
 
         with open(factorio_info_file, "w") as f:
             json.dump(mod_info, f, indent=2)
@@ -137,4 +137,5 @@ def _update_mod(folder_name, mod_folder, utility_version=None):
     return version
 
 
-main()
+if __name__ == '__main__':
+    main()
