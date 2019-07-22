@@ -10,3 +10,4 @@
 - Made pickaxes, cables and nails smithable
 - Added processing technologies with icons
 - Added bronze to elder rune armours with recipes and technologies
+- Added bronze to elder rune armour sets acting as science packs

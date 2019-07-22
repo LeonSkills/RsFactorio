@@ -9,5 +9,6 @@ return {
   ["rs-clay"] = "stone",
   ["rs-bronze-cable"] = "copper-cable",
   ["rs-steel-processing"] = "steel-processing",
-  ["rs-steel-pickaxe"] = "steel-axe"
+  ["rs-steel-pickaxe"] = "steel-axe",
+  ["rs-bane-armour-set"] = "rs-banite-armour-set"
 }

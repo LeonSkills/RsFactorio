@@ -237,7 +237,7 @@ local elder_rune_pick_tech = {
   extra_prerequisites = {"rs-elder-rune-bar", "rs-bane-pickaxe"},
   icon = "__RsSmithing__/graphics/technology/elder-rune-pickaxe.png",
   icon_size = 900,
-  localised_name = {"technology-name.rs-steel-pickaxe"},
+  localised_name = {"technology-name.rs-elder-rune-pickaxe"},
   localised_description = {"technology-description.steel-axe"}
 }
 create_technology(elder_rune_pick_tech, true)

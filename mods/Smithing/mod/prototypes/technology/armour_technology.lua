@@ -20,8 +20,6 @@ local iron_pick_tech = {
   extra_prerequisites = {"rs-iron-bar"},
   icon = "__RsSmithing__/graphics/technology/iron-armour.png",
   icon_size = 727,
-  localised_name = {"technology-name.rs-iron-armour"},
-  localised_description = {"technology-description.steel-axe"}
 }
 create_technology(iron_pick_tech, true)
 
@@ -45,8 +43,6 @@ local steel_pick_tech = {
   extra_prerequisites = {"rs-steel-bar", "rs-iron-armour"},
   icon = "__RsSmithing__/graphics/technology/steel-armour.png",
   icon_size = 800,
-  localised_name = {"technology-name.rs-steel-armour"},
-  localised_description = {"technology-description.steel-axe"}
 }
 create_technology(steel_pick_tech, true, true)
 
@@ -70,8 +66,6 @@ local mithril_pick_tech = {
   extra_prerequisites = {"rs-mithril-bar", "rs-steel-armour"},
   icon = "__RsSmithing__/graphics/technology/mithril-armour.png",
   icon_size = 695,
-  localised_name = {"technology-name.rs-mithril-armour"},
-  localised_description = {"technology-description.steel-axe"}
 }
 create_technology(mithril_pick_tech, true)
 local adamant_pick_tech = {
@@ -94,8 +88,6 @@ local adamant_pick_tech = {
   extra_prerequisites = {"rs-adamant-bar", "rs-mithril-armour"},
   icon = "__RsSmithing__/graphics/technology/adamant-armour.png",
   icon_size = 752,
-  localised_name = {"technology-name.rs-adamant-armour"},
-  localised_description = {"technology-description.steel-axe"}
 }
 create_technology(adamant_pick_tech, true)
 
@@ -119,8 +111,6 @@ local rune_pick_tech = {
   extra_prerequisites = {"rs-rune-bar", "rs-adamant-armour"},
   icon = "__RsSmithing__/graphics/technology/rune-armour.png",
   icon_size = 634,
-  localised_name = {"technology-name.rs-rune-armour"},
-  localised_description = {"technology-description.steel-axe"}
 }
 create_technology(rune_pick_tech, true)
 

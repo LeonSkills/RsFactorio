@@ -48,7 +48,7 @@ def main():
             icon_location = os.path.join(icons_folder, rs_name + ".png")
 
             # If image is already there assume
-            if not os.path.isfile(icon_location):
+            if not os.path.isfile(icon_location) or "icon_size" not in data:
                 icon_size = add_icon(icon_location, rs_name)
                 data["icon_size"] = icon_size
                 item_data_changed = True
@@ -161,10 +161,11 @@ def get_rs_data(rs_name):
         if "version" not in x_loaded or (x_loaded["version"] != "used" and x_loaded["version"] != "broken"):
             rs_data["examine"] = x_loaded["examine"]
             name = x_loaded["name"]
+            # armour set stuff
+            name = name.replace(" (lg)", "").replace("--28lg-29", "")
+
             rs_data["locale_name"] = name
             factorio_name = "rs-" + name.lower().replace("_", "-").replace(" ", "-")
-            # some stuff with armour sets
-            factorio_name = factorio_name.replace("--28lg-29", "")
             rs_data["name"] = factorio_name
             break
 
@@ -172,7 +173,7 @@ def get_rs_data(rs_name):
     return rs_data
 
 
-def add_icon(icon_location, rs_name, use_detailed = False):
+def add_icon(icon_location, rs_name, use_detailed=False):
     print("Fetching icon", rs_name)
     if use_detailed:
         rs_name += "_detail"

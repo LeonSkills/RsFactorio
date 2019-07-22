@@ -66,5 +66,11 @@ data:extend({
     name = "rs-body-smithing",
     order = "035-body",
     group = "rs-smithing"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-smithing-armour-set",
+    order = "100-science-pack",
+    group = "rs-smithing"
   }
 })
