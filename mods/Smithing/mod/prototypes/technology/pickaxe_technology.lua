@@ -20,7 +20,7 @@ local iron_pick_tech = {
     }
   },
   extra_prerequisites = {"rs-iron-bar"},
-  icon = "__RsMining__/graphics/technology/iron-pickaxe.png",
+  icon = "__RsSmithing__/graphics/technology/iron-pickaxe.png",
   icon_size = 900,
   localised_name = {"technology-name.rs-iron-pickaxe"},
   localised_description = {"technology-description.steel-axe"}
@@ -47,7 +47,7 @@ local steel_pick_tech = {
     }
   },
   extra_prerequisites = {"rs-steel-bar", "rs-iron-pickaxe"},
-  icon = "__RsMining__/graphics/technology/steel-pickaxe.png",
+  icon = "__RsSmithing__/graphics/technology/steel-pickaxe.png",
   icon_size = 900,
   localised_name = {"technology-name.rs-steel-pickaxe"},
   localised_description = {"technology-description.steel-axe"}
@@ -74,7 +74,7 @@ local mithril_pick_tech = {
     }
   },
   extra_prerequisites = {"rs-mithril-bar", "rs-steel-pickaxe"},
-  icon = "__RsMining__/graphics/technology/mithril-pickaxe.png",
+  icon = "__RsSmithing__/graphics/technology/mithril-pickaxe.png",
   icon_size = 900,
   localised_name = {"technology-name.rs-mithril-pickaxe"},
   localised_description = {"technology-description.steel-axe"}
@@ -100,7 +100,7 @@ local adamant_pick_tech = {
     }
   },
   extra_prerequisites = {"rs-adamant-bar", "rs-mithril-pickaxe"},
-  icon = "__RsMining__/graphics/technology/adamant-pickaxe.png",
+  icon = "__RsSmithing__/graphics/technology/adamant-pickaxe.png",
   icon_size = 900,
   localised_name = {"technology-name.rs-adamant-pickaxe"},
   localised_description = {"technology-description.steel-axe"}
@@ -127,7 +127,7 @@ local rune_pick_tech = {
     }
   },
   extra_prerequisites = {"rs-rune-bar", "rs-adamant-pickaxe"},
-  icon = "__RsMining__/graphics/technology/rune-pickaxe.png",
+  icon = "__RsSmithing__/graphics/technology/rune-pickaxe.png",
   icon_size = 900,
   localised_name = {"technology-name.rs-rune-pickaxe"},
   localised_description = {"technology-description.steel-axe"}
@@ -154,7 +154,7 @@ local orikalkum_pick_tech = {
     }
   },
   extra_prerequisites = {"rs-orikalkum-bar", "rs-rune-pickaxe"},
-  icon = "__RsMining__/graphics/technology/orikalkum-pickaxe.png",
+  icon = "__RsSmithing__/graphics/technology/orikalkum-pickaxe.png",
   icon_size = 900,
   localised_name = {"technology-name.rs-orikalkum-pickaxe"},
   localised_description = {"technology-description.steel-axe"}
@@ -181,7 +181,7 @@ local necronium_pick_tech = {
     }
   },
   extra_prerequisites = {"rs-necronium-bar", "rs-orikalkum-pickaxe"},
-  icon = "__RsMining__/graphics/technology/necronium-pickaxe.png",
+  icon = "__RsSmithing__/graphics/technology/necronium-pickaxe.png",
   icon_size = 900,
   localised_name = {"technology-name.rs-necronium-pickaxe"},
   localised_description = {"technology-description.steel-axe"}
@@ -208,7 +208,7 @@ local bane_pick_tech = {
     }
   },
   extra_prerequisites = {"rs-bane-bar", "rs-necronium-pickaxe"},
-  icon = "__RsMining__/graphics/technology/bane-pickaxe.png",
+  icon = "__RsSmithing__/graphics/technology/bane-pickaxe.png",
   icon_size = 900,
   localised_name = {"technology-name.rs-bane-pickaxe"},
   localised_description = {"technology-description.steel-axe"}
@@ -235,7 +235,7 @@ local elder_rune_pick_tech = {
     }
   },
   extra_prerequisites = {"rs-elder-rune-bar", "rs-bane-pickaxe"},
-  icon = "__RsMining__/graphics/technology/elder-rune-pickaxe.png",
+  icon = "__RsSmithing__/graphics/technology/elder-rune-pickaxe.png",
   icon_size = 900,
   localised_name = {"technology-name.rs-steel-pickaxe"},
   localised_description = {"technology-description.steel-axe"}

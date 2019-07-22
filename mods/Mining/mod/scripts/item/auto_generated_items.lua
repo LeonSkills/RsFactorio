@@ -17,6 +17,7 @@ return {
     ['examine'] = 'Some hard dry clay.',
     ['pictures'] = 'nil',
     ['icon_mipmaps'] = 'nil',
+    ['locale_name'] = 'Clay',
   },
   ['Tin ore'] = {
     ['group'] = 'mining-and-smithing',
@@ -33,6 +34,7 @@ return {
     ['high_alch'] = 10,
     ['low_alch'] = 6,
     ['examine'] = 'Used in Smithing (1).',
+    ['locale_name'] = 'Tin ore',
   },
   ['Copper ore'] = {
     ['group'] = 'mining-and-smithing',
@@ -52,6 +54,7 @@ return {
     ['examine'] = 'Used in Smithing (1).',
     ['pictures'] = 'nil',
     ['icon_mipmaps'] = 'nil',
+    ['locale_name'] = 'Copper ore',
   },
   ['Iron ore'] = {
     ['group'] = 'mining-and-smithing',
@@ -71,6 +74,7 @@ return {
     ['examine'] = 'Used in Smithing (10,20).',
     ['pictures'] = 'nil',
     ['icon_mipmaps'] = 'nil',
+    ['locale_name'] = 'Iron ore',
   },
   ['Coal'] = {
     ['group'] = 'mining-and-smithing',
@@ -93,6 +97,7 @@ return {
     ['pictures'] = 'nil',
     ['icon_mipmaps'] = 'nil',
     ['dark_background_icon'] = 'nil',
+    ['locale_name'] = 'Coal',
   },
   ['Mithril ore'] = {
     ['group'] = 'mining-and-smithing',
@@ -109,6 +114,7 @@ return {
     ['high_alch'] = 35,
     ['low_alch'] = 23,
     ['examine'] = 'Used in Smithing (30).',
+    ['locale_name'] = 'Mithril ore',
   },
   ['Luminite'] = {
     ['group'] = 'mining-and-smithing',
@@ -127,6 +133,7 @@ return {
     ['high_alch'] = 50,
     ['low_alch'] = 33,
     ['examine'] = 'Used in Smithing (40,50).',
+    ['locale_name'] = 'Luminite',
   },
   ['Adamantite ore'] = {
     ['group'] = 'mining-and-smithing',
@@ -143,6 +150,7 @@ return {
     ['high_alch'] = 50,
     ['low_alch'] = 33,
     ['examine'] = 'Used in Smithing (40).',
+    ['locale_name'] = 'Adamantite ore',
   },
   ['Runite ore'] = {
     ['group'] = 'mining-and-smithing',
@@ -159,6 +167,7 @@ return {
     ['high_alch'] = 125,
     ['low_alch'] = 83,
     ['examine'] = 'Used in Smithing (50).',
+    ['locale_name'] = 'Runite ore',
   },
   ['Drakolith'] = {
     ['group'] = 'mining-and-smithing',
@@ -177,6 +186,7 @@ return {
     ['high_alch'] = 250,
     ['low_alch'] = 166,
     ['examine'] = 'Used in Smithing (60).',
+    ['locale_name'] = 'Drakolith',
   },
   ['Orichalcite ore'] = {
     ['group'] = 'mining-and-smithing',
@@ -193,6 +203,7 @@ return {
     ['high_alch'] = 250,
     ['low_alch'] = 166,
     ['examine'] = 'Used in Smithing (60).',
+    ['locale_name'] = 'Orichalcite ore',
   },
   ['Phasmatite'] = {
     ['group'] = 'mining-and-smithing',
@@ -212,6 +223,7 @@ return {
     ['examine'] = 'Used in Smithing (70).',
     ['pictures'] = 'nil',
     ['icon_mipmaps'] = 'nil',
+    ['locale_name'] = 'Phasmatite',
   },
   ['Necrite ore'] = {
     ['group'] = 'mining-and-smithing',
@@ -228,6 +240,7 @@ return {
     ['high_alch'] = 500,
     ['low_alch'] = 333,
     ['examine'] = 'Used in Smithing (70).',
+    ['locale_name'] = 'Necrite ore',
   },
   ['Banite ore'] = {
     ['group'] = 'mining-and-smithing',
@@ -244,6 +257,7 @@ return {
     ['high_alch'] = 640,
     ['low_alch'] = 426,
     ['examine'] = 'This mystical ore could do with some magical input.',
+    ['locale_name'] = 'Banite ore',
   },
   ['Light animica'] = {
     ['group'] = 'mining-and-smithing',
@@ -260,6 +274,7 @@ return {
     ['high_alch'] = 1040,
     ['low_alch'] = 693,
     ['examine'] = 'Used in Smithing (90).',
+    ['locale_name'] = 'Light animica',
   },
   ['Dark animica'] = {
     ['group'] = 'mining-and-smithing',
@@ -276,6 +291,7 @@ return {
     ['high_alch'] = 1040,
     ['low_alch'] = 693,
     ['examine'] = 'Used in Smithing (90).',
+    ['locale_name'] = 'Dark animica',
   },
   ['Soft clay'] = {
     ['group'] = 'mining-and-smithing',
@@ -292,5 +308,6 @@ return {
     ['high_alch'] = 1,
     ['low_alch'] = 0,
     ['examine'] = 'Clay soft enough to mould. Used in Crafting (1).',
+    ['locale_name'] = 'Soft clay',
   },
 }

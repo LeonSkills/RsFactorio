@@ -9,3 +9,4 @@
 - Added logic to make items "smithable", in a furnace you smelt bars into an unfinished item. On the anvil you then create the actual item
 - Made pickaxes, cables and nails smithable
 - Added processing technologies with icons
+- Added bronze to elder rune armours with recipes and technologies

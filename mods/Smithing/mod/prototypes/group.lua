@@ -30,5 +30,41 @@ data:extend({
     name = "rs-smithing-assembling-machine",
     order = "010-assembling-machine",
     group = "rs-smithing"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-gauntlets-smithing",
+    order = "030-gauntlets",
+    group = "rs-smithing"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-boots-smithing",
+    order = "031-boots",
+    group = "rs-smithing"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-helm-smithing",
+    order = "032-helm",
+    group = "rs-smithing"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-shield-smithing",
+    order = "033-shield",
+    group = "rs-smithing"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-legs-smithing",
+    order = "034-legs",
+    group = "rs-smithing"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-body-smithing",
+    order = "035-body",
+    group = "rs-smithing"
   }
 })
