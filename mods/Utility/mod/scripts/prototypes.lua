@@ -85,8 +85,9 @@ function create_recipe(recipe)
   return prototype
 end
 
-function create_technology(technology, overwrite_effects)
+function create_technology(technology, overwrite_effects, overwrite_prereqs)
   overwrite_effects = overwrite_effects or false
+  overwrite_prereqs = overwrite_prereqs or false
   technology.name = get_vanilla_name(technology.name)
   local prototype = get_prototype(technology.name, "technology")
   technology.recipes_to_unlock = technology.recipes_to_unlock or {}
@@ -95,9 +96,15 @@ function create_technology(technology, overwrite_effects)
   if overwrite_effects then
     prototype.effects = {}
   end
+  if overwrite_prereqs then
+    prototype.prerequisites = {}
+  end
   for _, recipe in pairs(technology.recipes_to_unlock) do
     recipe = get_vanilla_name(recipe)
     local recipe_proto = data.raw.recipe[recipe]
+    if not recipe_proto then
+      error("Unknown recipe " .. recipe ..". Consider creating the technology after the recipe has been made.")
+    end
     recipe_proto.enabled = false
     if recipe_proto.normal then
       recipe_proto.normal.enabled = false

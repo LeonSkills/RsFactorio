@@ -1,5 +1,4 @@
 require("__RsUtility__.scripts.prototypes")
-require("__RsSmithing__.utility.smithing_util")
 
 local bronze_nails = {
   name = "rs-bronze-nails",
@@ -120,7 +119,3 @@ local orikalkum_cable = {
   energy_required = 0.6
 }
 create_recipe(orikalkum_cable)
-
-make_smithable(bronze_cable.name, "rs-bronze-processing")
-make_smithable(adamant_cable.name, "rs-adamant-processing")
-make_smithable(orikalkum_cable.name, "rs-orikalkum-processing")
