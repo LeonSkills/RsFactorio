@@ -1,3 +1,7 @@
+## [0.2.0] - 2019-07-22 - LeonSkills
+### Changed
+- Moved bars, pickaxes and other intermediates to smithing
+
 ## [0.1.0] - 2019-07-21 - LeonSkills
 ### Added
 - Added stone spirits as science packs

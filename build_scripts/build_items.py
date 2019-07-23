@@ -48,25 +48,30 @@ def main():
             icon_location = os.path.join(icons_folder, rs_name + ".png")
 
             # If image is already there assume
-            if not os.path.isfile(icon_location):
-                add_icon(icon_location, rs_name)
+            if not os.path.isfile(icon_location) or "icon_size" not in data:
+                icon_size = add_icon(icon_location, rs_name)
+                data["icon_size"] = icon_size
+                item_data_changed = True
 
-            if "name" not in data:
+            icon = "__" + mod_name + "__/graphics/icons/auto_generated/" + rs_name + ".png"
+            if "icon" not in data or data["icon"] != icon:
+                data["icon"] = icon
+                item_data_changed = True
+
+            if "locale_name" not in data:
                 data["rs_name"] = rs_name
                 rs_data = get_rs_data(rs_name)
 
                 data["name"] = "rs-" + item_name.replace(" ", "-").lower()
                 data["type"] = "item"
                 data["flags"] = {}
-                data["icon"] = "__" + mod_name + "__/graphics/icons/auto_generated/" + rs_name + ".png"
-                data["icon_size"] = 32
 
                 for key, value in rs_data.items():
                     data[key] = value
 
                 item_data_changed = True
 
-            locale_data[data["name"]] = {"item-name": item_name, "item-description": data["examine"]}
+            locale_data[data["name"]] = {"item-name": data["locale_name"], "item-description": data["examine"]}
             factorio_items[item_name] = data
 
         sorted_locale = collections.OrderedDict(sorted(locale_data.items()))
@@ -83,7 +88,7 @@ def to_lua_table(data, depth=1):
     if type(data) == int:
         return str(data)
     if type(data) == str:
-        return "'" + data + "'"
+        return '"' + data + '"'
     if type(data) == str(data).lower():
         return
     if type(data) == bool:
@@ -91,7 +96,7 @@ def to_lua_table(data, depth=1):
     if type(data) == dict:
         dict_str = "{\n"
         for key, val in data.items():
-            dict_str += "  " * depth + "['" + str(key) + "'] = " + to_lua_table(val, depth + 1) + ",\n"
+            dict_str += "  " * depth + '["' + str(key) + '"] = ' + to_lua_table(val, depth + 1) + ",\n"
         dict_str += "  " * (depth - 1) + "}"
 
         return dict_str
@@ -140,31 +145,39 @@ def get_rs_data(rs_name):
     file = "https://runescape.wiki/w/Special:ExportRDF/" + rs_name
     g = rdflib.Graph()
     g.parse(file, format="xml")
-    x = list(g[:rdflib.URIRef('https://runescape.wiki/w/Property-3AItem_JSON')])
-    if len(x) == 0:
-        print("Can't find item " + rs_name + " on wiki")
-        return False
     high_alch = list(g[:rdflib.URIRef('https://runescape.wiki/w/Property-3AHigh_Alchemy_value')])
     if high_alch:
         rs_data["high_alch"] = int(high_alch[0][1].value)
     low_alch = list(g[:rdflib.URIRef('https://runescape.wiki/w/Property-3ALow_Alchemy_value')])
     if low_alch:
         rs_data["low_alch"] = int(low_alch[0][1].value)
-    # item["weight"] = float(list(g[:rdflib.URIRef('https://runescape.wiki/w/Property-3AWeight')])[0][1].value)
-    rs_data["examine"] = json.loads(x[0][1])["examine"]
-    name = (
-        list(g[:rdflib.URIRef('https://runescape.wiki/w/Property-3AItem_name')])[0][0].split(
-            "https://runescape.wiki/w/")[
-            1])
-    factorio_name = "rs-" + name.lower().replace("_", "-")
-    # some stuff with armour sets
-    factorio_name = factorio_name.replace("--28lg-29", "")
-    rs_data["name"] = factorio_name
+
+    x_list = list(g[:rdflib.URIRef('https://runescape.wiki/w/Property-3AItem_JSON')])
+    if len(x_list) == 0:
+        print("Can't find item " + rs_name + " on wiki")
+        return False
+    for x in x_list:
+        x_loaded = json.loads(x[1])
+        if "version" not in x_loaded or (x_loaded["version"] != "used" and x_loaded["version"] != "broken"):
+            rs_data["examine"] = x_loaded["examine"]
+            name = x_loaded["name"]
+            # armour set stuff
+            name = name.replace(" (lg)", "").replace("--28lg-29", "")
+
+            rs_data["locale_name"] = name
+            factorio_name = "rs-" + name.lower().replace("_", "-").replace(" ", "-")
+            rs_data["name"] = factorio_name
+            break
+
+    assert "name" in rs_data
     return rs_data
 
 
-def add_icon(icon_location, rs_name):
+def add_icon(icon_location, rs_name, use_detailed=False):
     print("Fetching icon", rs_name)
+    if use_detailed:
+        rs_name += "_detail"
+
     url = "https://runescape.wiki/w/File:" + rs_name + ".png"
 
     req = urllib.request.Request(url, headers=headers)
@@ -180,12 +193,18 @@ def add_icon(icon_location, rs_name):
     # image_html = urllib.request.Request(image_url, headers=headers)
     file = BytesIO(urllib.request.urlopen(image_req).read())
     img = Image.open(file)
-    bg = Image.new("RGBA", (icon_size, icon_size), (0, 0, 0, 0))
     x, y = img.size
-    x_diff = math.floor((icon_size - x) / 2)
-    y_diff = math.floor((icon_size - y) / 2)
+    m = max(x, y)
+    im_size = max(m, icon_size)
+    bg = Image.new("RGBA", (im_size, im_size), (0, 0, 0, 0))
+    # img = img.resize((math.floor(x/m*icon_size), math.floor(y/m*icon_size)), Image.ANTIALIAS)
+    # x, y = img.size
+    x_diff = math.floor((im_size - x) / 2)
+    y_diff = math.floor((im_size - y) / 2)
     bg.paste(img, (x_diff, y_diff))
     bg.save(icon_location)
+
+    return im_size
 
 
 if __name__ == '__main__':

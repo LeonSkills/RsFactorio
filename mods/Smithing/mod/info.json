@@ -1,0 +1,10 @@
+{
+  "name": "RsSmithing",
+  "dependencies": [
+    "base >= 0.17",
+    "RsMining >= 0.2.0"
+  ],
+  "title": "Rs: Smithing",
+  "description": "Adds in 7 new bars and recipes with these bars as found in RuneScape after the Mining and Smithing update. Part of the Rs mods",
+  "version": "0.1.90"
+}
