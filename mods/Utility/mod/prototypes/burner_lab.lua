@@ -36,10 +36,8 @@ lab.energy_source = {
 }
 lab.energy_usage = "50kW"
 lab.inputs = {}
-for _, science_pack in pairs(science_packs) do
-  table.insert(lab.inputs, get_vanilla_name(science_pack))
-end
 lab.minable.result = "rs-burner-lab"
+lab.localised_name = {"item-name.rs-burner-lab"}
 
 lab.light.color = {
   b = 0,

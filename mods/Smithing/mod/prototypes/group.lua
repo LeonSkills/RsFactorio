@@ -121,8 +121,8 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "rs-masterwork-science-packs",
+    name = "rs-masterwork-armour-set",
     group = "rs-masterwork",
-    order = "rs-008-armour-sets"
+    order = "rs-010-armour-sets"
   },
 })

@@ -197,3 +197,19 @@ for piece, bars in pairs({boots=1, gloves=1, helm=2, platelegs=3, platebody=5}) 
     }
   })
 end
+
+create_recipe({
+  name = "rs-masterwork-armour-set",
+  category = "crafting",
+  energy_required = 0.6 * 31 + 0.6,
+  ingredients = {
+    {"rs-masterwork-boots", 1},
+    {"rs-masterwork-gloves", 1},
+    {"rs-masterwork-helm", 1},
+    {"rs-masterwork-platelegs", 1},
+    {"rs-masterwork-platebody", 1}
+  },
+  results = {
+    {"rs-masterwork-armour-set", 1}
+  }
+})

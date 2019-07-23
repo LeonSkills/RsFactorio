@@ -19,5 +19,6 @@ return {
   ["smithing-70"] = "rs-necronium-armour-set",
   ["smithing-80"] = "rs-banite-armour-set",
   ["smithing-90"] = "rs-elder-rune-armour-set",
+  ["smithing-99"] = "rs-trimmed-masterwork-armour-set"
 
 }

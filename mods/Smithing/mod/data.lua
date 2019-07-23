@@ -20,5 +20,6 @@ require("prototypes.technology.armour_technology")
 require("prototypes.technology.processing_technology")
 require("prototypes.technology.pickaxe_technology")
 require("prototypes.technology.smelting_technology")
+require("prototypes.technology.masterwork_technology")
 
 require("prototypes.category")

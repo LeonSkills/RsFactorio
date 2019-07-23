@@ -39,6 +39,8 @@ function create_item(item)
   if contains(science_packs, item.name) then
     item.type = "tool"
     item.durability = item.durability or 1
+    local lab = data.raw.lab["rs-burner-lab"]
+    table.insert(lab.inputs, item.name)
   else
     item.type = "item"
   end
