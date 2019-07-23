@@ -5,11 +5,10 @@ local item = {
   subgroup = "rs-smithing-assembling-machine",
   order = "010-anvil",
   stack_size = 50,
-  place_result = "rs-anvil",
   icon = "__RsSmithing__/graphics/icons/anvil.png",
   icon_size = 32
 }
-create_item(item)
+create_item(item, true)
 
 local recipe = {
   name = item.name,

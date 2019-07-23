@@ -1,0 +1,10 @@
+{
+  "name": "RsMiningDrills",
+  "dependencies": [
+    "base >= 0.17",
+    "RsSmithing >= 0.1.90"
+  ],
+  "title": "Rs: Mining Drills",
+  "description": "Adds 10 new mining drills based on the materials from RsSmithing; 5 burner based, 5 electric based. Replaces vanilla drills. Part of the RsMods.",
+  "version": "0.1.13"
+}
