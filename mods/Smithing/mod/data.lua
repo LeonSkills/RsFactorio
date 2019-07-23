@@ -4,6 +4,7 @@ require("prototypes.group")
 
 
 require("prototypes.item.cables")
+require("prototypes.item.masterwork_item")
 
 require("prototypes.anvil")
 
@@ -12,6 +13,7 @@ require("prototypes.recipe.armour_recipe")
 require("prototypes.recipe.bar_recipe")
 require("prototypes.recipe.intermediate_recipe")
 require("prototypes.recipe.pickaxe_recipe")
+require("prototypes.recipe.masterwork_recipe")
 
 require("prototypes.technology.armour_set_technology")
 require("prototypes.technology.armour_technology")

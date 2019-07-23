@@ -10,6 +10,7 @@ make_smithable("rs-steel-nails", "rs-steel-processing")
 make_smithable("rs-mithril-nails", "rs-mithril-processing")
 make_smithable("rs-adamant-nails", "rs-adamant-processing")
 make_smithable("rs-rune-nails", "rs-rune-processing")
+make_smithable("rs-masterwork-rivets", "rs-masterwork-processing")
 
 local mats = {"bronze", "iron", "steel", "mithril", "adamant", "rune", "orikalkum", "necronium", "bane", "elder-rune"}
 

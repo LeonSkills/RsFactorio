@@ -74,3 +74,55 @@ data:extend({
     group = "rs-smithing"
   }
 })
+
+data:extend({
+  {
+    type = "item-group",
+    name = "rs-masterwork",
+    order = "rs-021-masterwork",
+    icon = "__RsSmithing__/graphics/item-group/masterwork.png",
+    icon_size = 128
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-alloy-bars",
+    group = "rs-masterwork",
+    order = "rs-000-alloy-bars"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-folded-bars",
+    group = "rs-masterwork",
+    order = "rs-001-folded"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-masterwork-plates",
+    group = "rs-masterwork",
+    order = "rs-002-plates"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-masterwork-unfinished",
+    group = "rs-masterwork",
+    order = "rs-003-unfinished"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-masterwork-unfinished-riveted",
+    group = "rs-masterwork",
+    order = "rs-004-unfinished-riveted"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-masterwork-finished",
+    group = "rs-masterwork",
+    order = "rs-005-finished"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-masterwork-science-packs",
+    group = "rs-masterwork",
+    order = "rs-008-armour-sets"
+  },
+})

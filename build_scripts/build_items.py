@@ -88,7 +88,7 @@ def to_lua_table(data, depth=1):
     if type(data) == int:
         return str(data)
     if type(data) == str:
-        return "'" + data + "'"
+        return '"' + data + '"'
     if type(data) == str(data).lower():
         return
     if type(data) == bool:
@@ -96,7 +96,7 @@ def to_lua_table(data, depth=1):
     if type(data) == dict:
         dict_str = "{\n"
         for key, val in data.items():
-            dict_str += "  " * depth + "['" + str(key) + "'] = " + to_lua_table(val, depth + 1) + ",\n"
+            dict_str += "  " * depth + '["' + str(key) + '"] = ' + to_lua_table(val, depth + 1) + ",\n"
         dict_str += "  " * (depth - 1) + "}"
 
         return dict_str
