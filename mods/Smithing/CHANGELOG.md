@@ -2,6 +2,8 @@
 
 ### Changed
 - Icons of unfinished recipes now indicate what item is being made
+- Changed pickaxe prerequisites from bar to processing
+- Pickaxe technologies now include the science packs of their own tier
 
 ### Added
 - Added masterwork

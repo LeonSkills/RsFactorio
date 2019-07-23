@@ -22,6 +22,8 @@ function get_prototype(name, prototype)
   local proto = data.raw[prototype][name]
   if prototype == "recipe" then
     proto.ingredients = {}
+    proto.normal = nil
+    proto.expensive = nil
   elseif prototype == "technology" then
     proto.prerequisites = {}
     proto.effects = {}
@@ -31,7 +33,7 @@ function get_prototype(name, prototype)
   return proto
 end
 
-function create_item(item)
+function create_item(item, is_entity)
   item.localised_name = item.localised_name or { "item-name." .. item.name}
   item.localised_description = item.localised_description or { "item-description." .. item.name}
   item.name = get_vanilla_name(item.name)
@@ -43,6 +45,10 @@ function create_item(item)
     table.insert(lab.inputs, item.name)
   else
     item.type = "item"
+  end
+
+  if is_entity then
+    item.place_result = item.name
   end
 
   local prototype = get_prototype(item.name, item.type)
@@ -83,11 +89,12 @@ function create_recipe(recipe)
     end
     prototype[k] = v
   end
-
   return prototype
 end
 
-function create_technology(technology, overwrite_effects, overwrite_prereqs)
+function create_technology(technology, overwrite_effects, overwrite_prereqs, level_including)
+  --level including indicates whether the science packs of technology.level should be included
+
   overwrite_effects = overwrite_effects or false
   overwrite_prereqs = overwrite_prereqs or false
   technology.name = get_vanilla_name(technology.name)
@@ -124,9 +131,10 @@ function create_technology(technology, overwrite_effects, overwrite_prereqs)
   end
 
   technology.unit.ingredients = {}
+  local level_offset = level_including and 0 or 1
   for skill, level in pairs(technology.levels) do
     local highest_pack = nil
-    for i=0, level-1, 1 do
+    for i=0, level-level_offset, 1 do
       local science_pack = science_packs[skill .. "-" .. i]
       if science_pack then
         science_pack = get_vanilla_name(science_pack)
