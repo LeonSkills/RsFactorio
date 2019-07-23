@@ -7,18 +7,15 @@ local bronze_stone_spirit = {
   order = "01",
   icon = "__RsMining__/graphics/icons/copper_stone_spirit.png",
   icon_size = 32,
-  icon_mipmaps = 2,
   pictures = {
     {
       filename = "__RsMining__/graphics/icons/copper_stone_spirit.png",
       size = 32,
-      mipmap_count=2,
       scale = 0.5
     },
     {
       filename = "__RsMining__/graphics/icons/tin_stone_spirit.png",
       size = 32,
-      mipmap_count=2,
       scale = 0.5
     }
   }
@@ -112,18 +109,15 @@ local elder_rune_stone_spirit = {
   order = 90,
   icon = "__RsMining__/graphics/icons/light_animica_stone_spirit.png",
   icon_size = 32,
-  icon_mipmaps = 2,
   pictures = {
     {
       filename = "__RsMining__/graphics/icons/light_animica_stone_spirit.png",
       size = 32,
-      mipmap_count=2,
       scale = 0.5
     },
     {
       filename = "__RsMining__/graphics/icons/dark_animica_stone_spirit.png",
       size = 32,
-      mipmap_count=2,
       scale = 0.5
     }
   }

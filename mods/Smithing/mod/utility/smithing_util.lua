@@ -15,6 +15,19 @@ function make_smithable(prototype_name, technology)
     localised_name = {"item-name."..prototype_name}
   end
 
+  local unfinished_recipe_icon = {
+    {
+      icon = item.icon,
+      scale = 32/item.icon_size,
+      icon_size = 32
+    },
+    {
+      icon = "__RsSmithing__/graphics/icons/unfinished-smithing-item.png",
+      scale = 0.5,
+      shift = {-8, 8}
+    }
+  }
+
   data:extend({
     {
       type = "item",
@@ -30,8 +43,8 @@ function make_smithable(prototype_name, technology)
     {
       type = "recipe",
       name = "rs-unfinished-"..prototype_name,
-      icon = item.icon,
-      icon_size = item.icon_size,
+      icons = unfinished_recipe_icon,
+      icon_size = 32,
       order = (recipe.order or item.order).."-a",
       subgroup = recipe.subgroup,
       localised_name = {"smithing.unfinished", localised_name},

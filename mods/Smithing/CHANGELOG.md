@@ -1,3 +1,8 @@
+## [0.1.0] - 2019-07-23 - LeonSkills
+
+### Changed
+- Icons of unfinished recipes now indicate what item is being made
+
 ## [0.1.0] - 2019-07-22 - LeonSkills
 
 ### Changed
