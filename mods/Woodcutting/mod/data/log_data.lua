@@ -1,3 +1,5 @@
+local resource_autoplace = require("resource-autoplace")
+
 local trees = {
   [1] = {
     name = "",
@@ -13,7 +15,18 @@ local trees = {
     width = 447,
     height = 439,
     shift = {-0.13, -1.68},
-    coverage = 0.003
+    coverage = 0.003,
+    autoplace = resource_autoplace.resource_autoplace_settings{
+      name = "rs-oak-autoplace",
+      autoplace_control_name = "trees", -- TODO, make one for each tree?
+      base_density = 1,
+      random_probability = 0.3,
+      --has_starting_area_placement = true,
+      regular_rq_factor_multiplier = 1.5,
+      regular_blob_amplitude_multiplier = 4,
+      base_spots_per_km2 = 90,
+      seed1 = 34327891
+    }
   },
   [3] = {
     name = "willow-",
@@ -54,7 +67,18 @@ local trees = {
     width = 373,
     height = 441,
     shift = {0.134, -1.696},
-    coverage = 0.001
+    coverage = 0.001,
+    autoplace = resource_autoplace.resource_autoplace_settings{
+      name = "rs-maple-autoplace",
+      autoplace_control_name = "trees", -- TODO, make one for each tree?
+      base_density = 1,
+      random_probability = 0.1,
+      has_starting_area_placement = nil,
+      regular_rq_factor_multiplier = 2,
+      regular_blob_amplitude_multiplier = 4,
+      base_spots_per_km2 = 5,
+      seed1 = 343278912737
+    }
   },
   [5] = {
     name = "yew-",
@@ -64,7 +88,18 @@ local trees = {
     width = 430,
     height = 455,
     shift = {-0.35, -1.7785},
-    coverage = 0.0005
+    coverage = 0.0005,
+    autoplace = resource_autoplace.resource_autoplace_settings{
+      name = "rs-yew-autoplace",
+      autoplace_control_name = "trees", -- TODO, make one for each tree?
+      base_density = 1,
+      random_probability = 0.05,
+      has_starting_area_placement = false,
+      regular_rq_factor_multiplier = 1.2,
+      regular_blob_amplitude_multiplier = 4,
+      base_spots_per_km2 = 5,
+      seed1 = 343278912355
+    }
   },
   [6] = {
     name = "magic-",
@@ -74,7 +109,18 @@ local trees = {
     width = 539,
     height = 487,
     shift = {0.5, -2},
-    coverage = 0.00025
+    coverage = 0.00025,
+    autoplace = resource_autoplace.resource_autoplace_settings{
+      name = "rs-magic-autoplace",
+      autoplace_control_name = "trees", -- TODO, make one for each tree?
+      base_density = 1,
+      random_probability = 0.02,
+      has_starting_area_placement = false,
+      regular_rq_factor_multiplier = 0.7,
+      regular_blob_amplitude_multiplier = 4,
+      base_spots_per_km2 = 4,
+      seed1 = 343278916744
+    }
   }
 }
 
