@@ -1,3 +1,8 @@
+## [0.1.0] - 2019-07-25 - LeonSkills
+### Added
+- Created planks (normal, oak, willow, maple, yew, magic). Items, recipes and technologies
+- Planks as woodcutting science packs
+
 ## [0.1.0] - 2019-07-24 - LeonSkills
 ### Added
 - Mod created
