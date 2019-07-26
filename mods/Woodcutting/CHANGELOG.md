@@ -1,6 +1,7 @@
 ## [0.1.0] - 2019-07-25 - LeonSkills
 ### Added
 - Technology unlocks ability to mine trees. minable is set to false for oak+ trees until its technology is researched
+- Added fuel values to logs
 
 ## [0.1.0] - 2019-07-25 - LeonSkills
 ### Added

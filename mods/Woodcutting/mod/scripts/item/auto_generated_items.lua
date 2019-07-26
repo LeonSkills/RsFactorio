@@ -14,6 +14,7 @@ return {
     ["low_alch"] = 1,
     ["examine"] = "A number of wooden logs. Used in Firemaking (1), Fletching (1), Construction (1).",
     ["locale_name"] = "Logs",
+    ["fuel_value"] = "2MJ",
   },
   ["Oak logs"] = {
     ["subgroup"] = "rs-logs",
@@ -30,6 +31,8 @@ return {
     ["low_alch"] = 8,
     ["examine"] = "Logs cut from an oak tree. Used in Firemaking (15), Fletching (20).",
     ["locale_name"] = "Oak logs",
+    ["fuel_value"] = "5MJ",
+    ["fuel_category"] = "chemical",
   },
   ["Willow logs"] = {
     ["subgroup"] = "rs-logs",
@@ -46,6 +49,8 @@ return {
     ["low_alch"] = 16,
     ["examine"] = "Logs cut from a willow tree.",
     ["locale_name"] = "Willow logs",
+    ["fuel_value"] = "10MJ",
+    ["fuel_category"] = "chemical",
   },
   ["Maple logs"] = {
     ["subgroup"] = "rs-logs",
@@ -62,6 +67,8 @@ return {
     ["low_alch"] = 32,
     ["examine"] = "Logs cut from a maple tree.",
     ["locale_name"] = "Maple logs",
+    ["fuel_value"] = "25MJ",
+    ["fuel_category"] = "chemical",
   },
   ["Yew logs"] = {
     ["subgroup"] = "rs-logs",
@@ -78,6 +85,8 @@ return {
     ["low_alch"] = 64,
     ["examine"] = "Logs cut from a yew tree.",
     ["locale_name"] = "Yew logs",
+    ["fuel_value"] = "75MJ",
+    ["fuel_category"] = "chemical",
   },
   ["Magic logs"] = {
     ["subgroup"] = "rs-logs",
@@ -94,6 +103,8 @@ return {
     ["low_alch"] = 128,
     ["examine"] = "Logs cut from a magic tree.",
     ["locale_name"] = "Magic logs",
+    ["fuel_value"] = "100MJ",
+    ["fuel_category"] = "chemical",
   },
   ["Plank"] = {
     ["subgroup"] = "rs-planks",
