@@ -12,5 +12,6 @@ return {
   ["rs-steel-pickaxe"] = "steel-axe",
   ["rs-bane-armour-set"] = "rs-banite-armour-set",
   ["rs-bronze-mining-drill"] = "burner-mining-drill",
-  ["rs-steel-mining-drill"] = "electric-mining-drill"
+  ["rs-steel-mining-drill"] = "electric-mining-drill",
+  ["rs-logs"] = "wood"
 }

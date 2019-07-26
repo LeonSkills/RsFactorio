@@ -1,0 +1,9 @@
+{
+  "name": "RsWoodcutting",
+  "dependencies": [
+    "base >= 0.17"
+  ],
+  "title": "Rs: Woodcutting",
+  "description": "Adds 5 new trees to the factorio world (oak, willow, maple, yew and magic). Part of the RsMods.",
+  "version": "0.1.99"
+}

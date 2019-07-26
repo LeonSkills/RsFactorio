@@ -132,9 +132,13 @@ function create_technology(technology, overwrite_effects, overwrite_prereqs, lev
 
   technology.unit.ingredients = {}
   local level_offset = level_including and 0 or 1
-  for skill, level in pairs(technology.levels) do
-    local highest_pack = nil
-    for i=0, level-level_offset, 1 do
+  for skill, levels in pairs(technology.levels) do
+    local highest_pack
+    if type(levels) ~= "table" then
+      levels = {0, levels}
+    end
+    assert(#levels == 2)
+    for i=levels[1], levels[2] -level_offset, 1 do
       local science_pack = science_packs[skill .. "-" .. i]
       if science_pack then
         science_pack = get_vanilla_name(science_pack)

@@ -19,6 +19,12 @@ return {
   ["smithing-70"] = "rs-necronium-armour-set",
   ["smithing-80"] = "rs-banite-armour-set",
   ["smithing-90"] = "rs-elder-rune-armour-set",
-  ["smithing-99"] = "rs-trimmed-masterwork-armour-set"
+  ["smithing-99"] = "rs-trimmed-masterwork-armour-set",
+  ["woodcutting-1"] = "rs-plank",
+  ["woodcutting-15"] = "rs-oak-plank",
+  ["woodcutting-30"] = "rs-willow-plank",
+  ["woodcutting-45"] = "rs-maple-plank",
+  ["woodcutting-60"] = "rs-yew-plank",
+  ["woodcutting-75"] = "rs-magic-plank"
 
 }
