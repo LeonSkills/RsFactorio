@@ -80,7 +80,7 @@ return {
     ["locale_name"] = "Magic seed",
   },
   ["bucket"] = {
-    ["subgroup"] = "rs-farming-compost",
+    ["subgroup"] = "rs-compost",
     ["stack_size"] = 200,
     ["order"] = "rs-010-bucket-a",
     ["icon_size"] = 32,
@@ -96,7 +96,7 @@ return {
     ["locale_name"] = "Bucket",
   },
   ["compost"] = {
-    ["subgroup"] = "rs-farming-compost",
+    ["subgroup"] = "rs-compost",
     ["stack_size"] = 100,
     ["order"] = "rs-011-compost",
     ["icon_size"] = 32,
@@ -112,7 +112,7 @@ return {
     ["locale_name"] = "Compost",
   },
   ["supercompost"] = {
-    ["subgroup"] = "rs-farming-compost",
+    ["subgroup"] = "rs-compost",
     ["stack_size"] = 100,
     ["order"] = "rs-012-supercompost",
     ["icon_size"] = 32,
