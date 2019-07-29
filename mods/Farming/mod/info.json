@@ -1,9 +1,10 @@
 {
   "name": "RsFarming",
   "dependencies": [
-    "base >= 0.17"
+    "base >= 0.17",
+    "?RsWoodcutting >= 0.1.99"
   ],
   "title": "Rs: Farming",
   "description": "Obtain seeds to grow trees and herbs in farming patches, as found in RuneScape. Part of the RS mods",
-  "version": "0.1.0"
+  "version": "0.1.26"
 }
