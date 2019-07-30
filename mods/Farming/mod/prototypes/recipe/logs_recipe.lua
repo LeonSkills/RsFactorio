@@ -19,7 +19,8 @@ for index, patch in pairs(patch_data) do
     results = {
       {name = "rs-"..patch.name.."-logs", amount_min = patch.amount_min, amount_max = patch.amount_max},
       {name = "rs-birds-nest", amount = 1, probability = 1/40 * index}
-    }
+    },
+    localised_name = {"recipe-name.rs-"..patch.name.."-growing"}
   })
 
   create_recipe({
@@ -38,7 +39,8 @@ for index, patch in pairs(patch_data) do
       {name = "rs-"..patch.name.."-logs", amount_min = patch.amount_min*1.5, amount_max = patch.amount_max*1.5},
       {name = "rs-birds-nest", amount = 1, probability = 1/40 * index},
       {name = "rs-bucket", amount = 1, catalyst_amount = 1}
-    }
+    },
+    localised_name = {"recipe-name.rs-"..patch.name.."-growing-compost"}
   })
 
   create_recipe({
@@ -57,6 +59,7 @@ for index, patch in pairs(patch_data) do
       {name = "rs-"..patch.name.."-logs", amount_min = patch.amount_min*2, amount_max = patch.amount_max*2},
       {name = "rs-birds-nest", amount = 1, probability = 1/40 * index},
       {name = "rs-bucket", amount = 1, catalyst_amount = 1}
-    }
+    },
+    localised_name = {"recipe-name.rs-"..patch.name.."-growing-supercompost"}
   })
 end

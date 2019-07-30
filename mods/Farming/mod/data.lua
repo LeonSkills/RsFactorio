@@ -10,3 +10,7 @@ require("prototypes.recipe.logs_recipe")
 require("prototypes.compost_prototypes")
 require("prototypes.patch_prototypes")
 
+require("prototypes.technology.tree_patch_technology")
+require("prototypes.technology.root_technology")
+require("prototypes.technology.compost_technology")
+require("prototypes.technology.tree_growing_technology")

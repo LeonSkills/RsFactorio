@@ -15,8 +15,8 @@ create_technology({
       effect_description = {"technology-description.rs-oak-tree"}
     }
   },
-  icon = "__RsWoodcutting__/graphics/technology/oak-tree.png",
-  icon_size = 1050
+  icon = "__RsWoodcutting__/graphics/technology/oak-logs.png",
+  icon_size = 759
 })
 
 create_technology({
@@ -34,8 +34,8 @@ create_technology({
       effect_description = {"technology-description.rs-willow-tree"}
     }
   },
-  icon = "__RsWoodcutting__/graphics/technology/willow-tree.png",
-  icon_size = 1050,
+  icon = "__RsWoodcutting__/graphics/technology/willow-logs.png",
+  icon_size = 814,
   extra_prerequisites = {"rs-oak-tree"}
 })
 
@@ -54,8 +54,8 @@ create_technology({
       effect_description = {"technology-description.rs-maple-tree"}
     }
   },
-  icon = "__RsWoodcutting__/graphics/technology/maple-tree.png",
-  icon_size = 1050,
+  icon = "__RsWoodcutting__/graphics/technology/maple-logs.png",
+  icon_size = 700,
   extra_prerequisites = {"rs-willow-tree"}
 })
 
@@ -74,8 +74,8 @@ create_technology({
       effect_description = {"technology-description.rs-yew-tree"}
     }
   },
-  icon = "__RsWoodcutting__/graphics/technology/yew-tree.png",
-  icon_size = 1050,
+  icon = "__RsWoodcutting__/graphics/technology/yew-logs.png",
+  icon_size = 1008,
   extra_prerequisites = {"rs-maple-tree"}
 })
 
@@ -94,7 +94,7 @@ create_technology({
       effect_description = {"technology-description.rs-magic-tree"}
     }
   },
-  icon = "__RsWoodcutting__/graphics/technology/magic-tree.png",
-  icon_size = 1050,
+  icon = "__RsWoodcutting__/graphics/technology/magic-logs.png",
+  icon_size = 1000,
   extra_prerequisites = {"rs-yew-tree"}
 })

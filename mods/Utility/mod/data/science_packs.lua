@@ -25,6 +25,11 @@ return {
   ["woodcutting-30"] = "rs-willow-plank",
   ["woodcutting-45"] = "rs-maple-plank",
   ["woodcutting-60"] = "rs-yew-plank",
-  ["woodcutting-75"] = "rs-magic-plank"
+  ["woodcutting-75"] = "rs-magic-plank",
+  ["farming-15"] = "rs-oak-roots",
+  ["farming-30"] = "rs-willow-roots",
+  ["farming-45"] = "rs-maple-roots",
+  ["farming-60"] = "rs-yew-roots",
+  ["farming-75"] = "rs-magic-roots"
 
 }

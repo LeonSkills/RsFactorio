@@ -17,7 +17,7 @@ local compost_items = {
 }
 
 for item_name, energy in pairs(compost_items) do
-  local item = data.raw.item[get_vanilla_name(item_name)]
+  local item = data.raw.item[get_vanilla_name(item_name)] or data.raw.tool[get_vanilla_name(item_name)]
   if item then
     item.fuel_category = "rs-compost"
     item.fuel_value = (100*energy).."kJ"
