@@ -5,6 +5,7 @@
 - Added compost and compost bins. Some items can now be turned into compost, those items act as "compost fuel". Compost and supercompost increase yield on patches.
 - Added technologies for tree growing (very nice tree of trees!)
 - Added recipes to grow trees with compost
+- Added birds nest recipe
 
 
 ## [0.1.0] - 2019-07-26 - LeonSkills

@@ -62,6 +62,7 @@ for tree_level, tree_data in pairs(trees) do
     patch.module_specification = {
       module_slots = 2,
     }
+    patch.localised_name = {"item-name.rs-"..tree_data.name.."-tree-patch"}
     patch.result_inventory_size = 1
     patch.source_inventory_size = 1
     patch.energy_usage = "1W"

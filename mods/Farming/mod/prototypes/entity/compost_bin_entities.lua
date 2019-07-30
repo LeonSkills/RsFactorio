@@ -12,6 +12,7 @@ bin.minable = {
   mining_time = 0.3,
   result = get_vanilla_name("rs-compost-bin"),
 }
+bin.localised_name = {"item-name.rs-compost-bin"}
 bin.result_inventory_size = 2
 bin.source_inventory_size = 2
 bin.crafting_speed = 1
