@@ -13,5 +13,6 @@ create_technology({
     ["farming"] = 60,
   },
   icon = "__RsFarming__/graphics/technology/supercompost.png",
-  icon_size = 500
+  icon_size = 500,
+  localised_name = {"item-name.rs-supercompost"}
 })

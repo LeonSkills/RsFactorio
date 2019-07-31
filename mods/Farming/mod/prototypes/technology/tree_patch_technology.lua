@@ -23,7 +23,8 @@ create_technology({
       icon_size = 59
     }
   },
-  icon_size = 256
+  icon_size = 256,
+  localised_name = {"item-name.rs-oak-tree-patch"}
 })
 
 create_technology({
@@ -50,7 +51,8 @@ create_technology({
     }
   },
   icon_size = 256,
-  extra_prerequisites = {"rs-oak-tree-patch"}
+  extra_prerequisites = {"rs-oak-tree-patch"},
+  localised_name = {"item-name.rs-willow-tree-patch"}
 })
 
 create_technology({
@@ -77,7 +79,8 @@ create_technology({
     }
   },
   icon_size = 256,
-  extra_prerequisites = {"rs-willow-tree-patch"}
+  extra_prerequisites = {"rs-willow-tree-patch"},
+  localised_name = {"item-name.rs-maple-tree-patch"}
 })
 
 create_technology({
@@ -104,7 +107,8 @@ create_technology({
     }
   },
   icon_size = 256,
-  extra_prerequisites = {"rs-maple-tree-patch"}
+  extra_prerequisites = {"rs-maple-tree-patch"},
+  localised_name = {"item-name.rs-yew-tree-patch"}
 })
 
 create_technology({
@@ -131,5 +135,6 @@ create_technology({
     }
   },
   icon_size = 256,
-  extra_prerequisites = {"rs-yew-tree-patch"}
+  extra_prerequisites = {"rs-yew-tree-patch"},
+  localised_name = {"item-name.rs-magic-tree-patch"}
 })

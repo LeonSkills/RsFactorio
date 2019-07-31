@@ -14,7 +14,7 @@ for herb, herb_data in pairs(herbs) do
   local grimy_herb = get_prototype("rs-grimy-"..herb, "item")
 
   create_recipe({
-    name = "rs-grimy-"..herb,
+    name = "rs-"..herb.."-farming",
     energy_required = i*i * 0.6 + i * 10*0.6 + 1.2, -- TODO, change,
     category = "rs-herb-farming",
     ingredients = {
@@ -30,7 +30,7 @@ for herb, herb_data in pairs(herbs) do
   })
 
   create_recipe({
-    name = "rs-grimy-"..herb.."-compost",
+    name = "rs-"..herb.."-farming-compost",
     energy_required = i*i * 0.6 + i * 10*0.6 + 1.2, -- TODO, change,
     category = "rs-herb-farming",
     ingredients = {
@@ -62,7 +62,7 @@ for herb, herb_data in pairs(herbs) do
   })
 
   create_recipe({
-    name = "rs-grimy-"..herb.."-supercompost",
+    name =  "rs-"..herb.."-farming-supercompost",
     energy_required = i*i * 0.6 + i * 10*0.6 + 1.2, -- TODO, change,
     category = "rs-herb-farming",
     ingredients = {
