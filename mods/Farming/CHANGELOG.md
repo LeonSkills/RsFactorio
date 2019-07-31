@@ -2,6 +2,7 @@
 ### Added
 - Added herb farming and cleaning
 - Added herb farming technologies
+- Added (empty) herb patch entity
 
 ## [0.1.0] - 2019-07-30 - LeonSkills
 ### Added
