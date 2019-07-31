@@ -42,5 +42,23 @@ data:extend({
     name = "rs-log-farming",
     order = "rs-022-woodcutting-001-logs-farming",
     group = "rs-farming"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-herb-seeds",
+    order = "rs-050-grimy-herb",
+    group = "rs-farming"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-grimy-herbs",
+    order = "rs-051-grimy-herb",
+    group = "rs-farming"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-clean-herbs",
+    order = "rs-052-clean-herb",
+    group = "rs-farming"
   }
 })
