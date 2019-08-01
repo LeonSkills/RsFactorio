@@ -13,5 +13,6 @@ return {
   ["rs-bane-armour-set"] = "rs-banite-armour-set",
   ["rs-bronze-mining-drill"] = "burner-mining-drill",
   ["rs-steel-mining-drill"] = "electric-mining-drill",
-  ["rs-logs"] = "wood"
+  ["rs-logs"] = "wood",
+  ["rs-oak-seed"] = "rs-acorn"
 }
