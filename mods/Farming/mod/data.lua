@@ -3,6 +3,7 @@ require("prototypes.group")
 require("prototypes.recipe_categories")
 
 require("prototypes.entity.compost_bin_entities")
+require("prototypes.entity.wild_herb_entity")
 
 require("prototypes.recipe.root_recipe")
 require("prototypes.recipe.logs_recipe")

@@ -127,6 +127,7 @@ for tree_level, tree_data in pairs(trees) do
     patch.icon_size = 32
     patch.collision_box = {{-1.2,-1.2}, {1.2, 1.2}}
     patch.selection_box = {{-1.5, -1.5}, {1.5, 1.5}}
+    patch.drawing_box = {{-2, -1.5}, {2, 4}}
     patch.minable = {
       mining_time = 0.3,
       result = "rs-"..tree_data.name.."-tree-patch",

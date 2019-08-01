@@ -2,6 +2,7 @@
 ### Added
 - Added herb patch animation
 - Added colour tints to herb patch based on the herb
+- Added wild herb entities, that spawn in with an autoplace control
 
 ### Changed
 - Changed herb patch from 3x3 to 2x3
