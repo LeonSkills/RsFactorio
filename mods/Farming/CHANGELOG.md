@@ -1,6 +1,7 @@
 ## [0.1.0] - 2019-07-31 - LeonSkills
 ### Added
 - Added herb patch animation
+- Added colour tints to herb patch based on the herb
 
 ### Changed
 - Changed herb patch from 3x3 to 2x3

@@ -26,7 +26,8 @@ for herb, herb_data in pairs(herbs) do
     },
     main_product = "rs-grimy-"..herb,
     order = "rs-herb-farming-"..add_leading_zeros(herb_data.level, 3).."-000",
-    allow_decomposition = false
+    allow_decomposition = false,
+    crafting_machine_tint = {primary = herb_data.tint}
   })
 
   create_recipe({
@@ -45,6 +46,7 @@ for herb, herb_data in pairs(herbs) do
     main_product = "rs-grimy-"..herb,
     order = "rs-herb-farming-"..add_leading_zeros(herb_data.level, 3).."-001",
     allow_decomposition = false,
+    crafting_machine_tint = {primary = herb_data.tint},
     localised_name = {"", {"item-name.rs-grimy-"..herb}, "+"},
     icons = {
       {
@@ -77,6 +79,7 @@ for herb, herb_data in pairs(herbs) do
     main_product = "rs-grimy-"..herb,
     order = "rs-herb-farming-"..add_leading_zeros(herb_data.level, 3).."-002",
     allow_decomposition = false,
+    crafting_machine_tint = {primary = herb_data.tint},
     localised_name = {"", {"item-name.rs-grimy-"..herb}, "++"},
     icons = {
       {

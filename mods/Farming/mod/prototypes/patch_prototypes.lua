@@ -213,8 +213,7 @@ local frame_count = 5
 local animation_duration = 12 -- in seconds
 local tile_size = 2
 patch.animation = {
-  layers = {
-    {
+  layers = {{
       width = 256,
       height = 256,
       frame_count = 1,
@@ -225,16 +224,7 @@ patch.animation = {
       repeat_count = frame_count
       --shift = tree_data.shift,
     },
-    {
-      width = 300,
-      height = 300,
-      frame_count = frame_count,
-      priority = "high",
-      filename = "__RsFarming__/graphics/entity/herb-farming-patch/herb_stages.png",
-      scale = 0.25/3 * tile_size,
-      line_length = frame_count
-      --shift = tree_data.shift,
-    }
+
   }
 }
 patch.idle_animation = {
@@ -252,6 +242,23 @@ patch.idle_animation = {
     }
   }
 }
+patch.working_visualisations = {
+  {
+    animation = {
+      width = 300,
+      height = 300,
+      frame_count = frame_count,
+      animation_speed = frame_count/(animation_duration * 30), -- 30 is a magic number?
+      priority = "high",
+      filename = "__RsFarming__/graphics/entity/herb-farming-patch/herb_stages_tint.png",
+      scale = 0.25/3 * tile_size,
+      line_length = frame_count
+      --shift = tree_data.shift,
+    },
+    apply_recipe_tint = "primary"
+  }
+}
+patch.default_recipe_tint = {primary = {102, 229, 56}}
 patch.max_health = 400
 patch.corpse = "medium-remnants"
 patch.flags = {
