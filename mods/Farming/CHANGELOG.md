@@ -1,3 +1,10 @@
+## [0.1.0] - 2019-07-31 - LeonSkills
+### Added
+- Added herb patch animation
+
+### Changed
+- Changed herb patch from 3x3 to 2x3
+
 ## [0.1.0] - 2019-07-30 - LeonSkills
 ### Added
 - Added herb farming and cleaning

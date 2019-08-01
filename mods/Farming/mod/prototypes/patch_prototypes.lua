@@ -209,16 +209,30 @@ patch.crafting_categories = {"rs-herb-farming"}
 patch.energy_source = { -- Todo, water
   type = "void"
 }
-patch.animation = { -- TODO, make animation
+local frame_count = 5
+local animation_duration = 12 -- in seconds
+local tile_size = 2
+patch.animation = {
   layers = {
     {
       width = 256,
       height = 256,
       frame_count = 1,
-      animation_speed = 1,
+      animation_speed = frame_count/(animation_duration * 30), -- 30 is a magic number?
       priority = "high",
-      filename = "__RsFarming__/graphics/entity/herb-farming-patch/herb-farming.png",
-      scale = 0.5*157/175,
+      filename = "__RsFarming__/graphics/entity/farming-patch/farming-patch.png",
+      scale = 0.5*157/175/3 * tile_size,
+      repeat_count = frame_count
+      --shift = tree_data.shift,
+    },
+    {
+      width = 300,
+      height = 300,
+      frame_count = frame_count,
+      priority = "high",
+      filename = "__RsFarming__/graphics/entity/herb-farming-patch/herb_stages.png",
+      scale = 0.25/3 * tile_size,
+      line_length = frame_count
       --shift = tree_data.shift,
     }
   }
@@ -232,7 +246,8 @@ patch.idle_animation = {
       animation_speed = 1,
       priority = "high",
       filename = "__RsFarming__/graphics/entity/farming-patch/farming-patch.png",
-      scale = 0.5*157/175,
+      scale = 0.5*157/175/3 * tile_size,
+      repeat_count = frame_count
       --shift = tree_data.shift,
     }
   }
@@ -246,8 +261,8 @@ patch.flags = {
 }
 patch.icons = herb_patch_item.icons
 patch.icon_size = 32
-patch.collision_box = {{-1.2,-1.2}, {1.2, 1.2}}
-patch.selection_box = {{-1.5, -1.5}, {1.5, 1.5}}
+patch.collision_box = {{-tile_size/2 + 0.3,-tile_size/2 + 0.3}, {tile_size/2 - 0.3, tile_size/2 - 0.3}}
+patch.selection_box = {{-tile_size/2, -tile_size/2}, {tile_size/2, tile_size/2}}
 patch.minable = {
   mining_time = 0.3,
   result = "rs-herb-farming-patch",
@@ -267,3 +282,5 @@ patch.close_sound = {
   volume = 0.75
 }
 patch.fast_replaceable_group = "farming-patch"
+patch.scale_entity_info_icon = true
+patch.entity_info_icon_shift = {0, tile_size/2 - 0.25}

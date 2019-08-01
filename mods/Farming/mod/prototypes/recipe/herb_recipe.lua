@@ -9,13 +9,13 @@ local compost_icon = get_prototype("rs-compost", "item").icon
 local supercompost_icon = get_prototype("rs-supercompost", "item").icon
 
 
-local i = 0
+local i = 1
 for herb, herb_data in pairs(herbs) do
   local grimy_herb = get_prototype("rs-grimy-"..herb, "item")
 
   create_recipe({
     name = "rs-"..herb.."-farming",
-    energy_required = i*i * 0.6 + i * 10*0.6 + 1.2, -- TODO, change,
+    energy_required = i * 12 + 12,
     category = "rs-herb-farming",
     ingredients = {
       {"rs-"..herb.."-seed", 1}
@@ -31,7 +31,7 @@ for herb, herb_data in pairs(herbs) do
 
   create_recipe({
     name = "rs-"..herb.."-farming-compost",
-    energy_required = i*i * 0.6 + i * 10*0.6 + 1.2, -- TODO, change,
+    energy_required = i * 12 + 12,
     category = "rs-herb-farming",
     ingredients = {
       {"rs-"..herb.."-seed", 1},
@@ -63,7 +63,7 @@ for herb, herb_data in pairs(herbs) do
 
   create_recipe({
     name =  "rs-"..herb.."-farming-supercompost",
-    energy_required = i*i * 0.6 + i * 10*0.6 + 1.2, -- TODO, change,
+    energy_required = i * 12 + 12,
     category = "rs-herb-farming",
     ingredients = {
       {"rs-"..herb.."-seed", 1},
