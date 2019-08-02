@@ -1,4 +1,4 @@
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 local recipes_to_unlock = {
   "rs-concentrated-alloy-bar",

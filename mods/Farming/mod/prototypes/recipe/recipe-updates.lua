@@ -1,4 +1,4 @@
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 -- remove plank and bronze nails from farm patch if it doesn't exist
 local patch_recipe = data.raw.recipe[get_vanilla_name("rs-farming-patch")]

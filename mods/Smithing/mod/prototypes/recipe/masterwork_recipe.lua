@@ -1,5 +1,5 @@
-require("__RsUtility__.scripts.prototypes")
-require("__RsUtility__.scripts.utility")
+require("__RsBase__.scripts.prototypes")
+require("__RsBase__.scripts.utility")
 
 
 create_recipe({

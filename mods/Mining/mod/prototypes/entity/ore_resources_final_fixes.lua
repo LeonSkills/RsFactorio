@@ -1,5 +1,5 @@
 local ores = require("prototypes.entity.ore_data")
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 -- update presets
 for _, preset in pairs(data.raw["map-gen-presets"].default) do

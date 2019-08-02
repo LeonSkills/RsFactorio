@@ -1,4 +1,4 @@
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 local miners = require("data.miner-data")
 

@@ -1,5 +1,5 @@
 
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 local bin = get_prototype("rs-compost-bin", "assembling-machine")
 bin.order = "rs-000-compost-bin"

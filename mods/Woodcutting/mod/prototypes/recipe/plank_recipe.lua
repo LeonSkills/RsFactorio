@@ -1,4 +1,4 @@
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 for index, wood in pairs({"", "oak-", "willow-", "maple-", "yew-", "magic-"}) do
   create_recipe({

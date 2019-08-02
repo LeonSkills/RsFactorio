@@ -1,4 +1,4 @@
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 local bronze_stone_spirit = {
   name = "rs-bronze-stone-spirit",

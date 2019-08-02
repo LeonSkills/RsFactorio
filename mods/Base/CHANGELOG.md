@@ -1,3 +1,7 @@
+## [0.2.0] - 2019-07-20 - LeonSkills
+### Changed
+- Renamed internal name to RsBase
+
 ## [0.1.0] - 2019-07-20 - LeonSkills
 ### Added
 - Renamed name to Rs: Base. 

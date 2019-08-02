@@ -1,6 +1,6 @@
 
 local ores = require("prototypes.entity.ore_data")
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 
 for ore_name, ore_data in pairs(ores) do

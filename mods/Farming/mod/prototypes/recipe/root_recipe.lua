@@ -1,4 +1,4 @@
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 local patch_data = require("data.patch_data")
 
 for _, patch in pairs(patch_data) do

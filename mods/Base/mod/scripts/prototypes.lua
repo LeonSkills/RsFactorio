@@ -1,5 +1,5 @@
-local vanilla_conversions = require("__RsUtility__.data.vanilla_names")
-local science_packs = require("__RsUtility__.data.science_packs")
+local vanilla_conversions = require("__RsBase__.data.vanilla_names")
+local science_packs = require("__RsBase__.data.science_packs")
 require("utility")
 
 function get_vanilla_name(string)

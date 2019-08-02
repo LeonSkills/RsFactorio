@@ -1,4 +1,4 @@
-require("__RsUtility__.scripts.utility")
+require("__RsBase__.scripts.utility")
 
 -- We need to update the furnaces from furnace type to assembler type, so they can accept multiple ores
 

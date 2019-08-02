@@ -1,4 +1,4 @@
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 --1/value indicates how many are required to fill one regular compost bucket
 -- supercompost requires 4 times as much (might change)

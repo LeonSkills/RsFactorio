@@ -1,6 +1,6 @@
 local ores = require("prototypes.entity.ore_data")
 local resource_autoplace = require("resource-autoplace")
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 
 local function resource(resource_parameters, autoplace_parameters)

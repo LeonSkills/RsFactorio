@@ -1,4 +1,4 @@
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 
 
@@ -16,7 +16,7 @@ local soft_clay = {
 }
 create_recipe(soft_clay)
 
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 
 -- Recipes to update that require new items

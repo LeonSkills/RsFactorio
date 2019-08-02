@@ -1,4 +1,4 @@
-require("__RsUtility__.scripts.prototypes")
+require("__RsBase__.scripts.prototypes")
 
 -- make trees not minable when research hasn't been unlocked yet
 script.on_event(defines.events.on_chunk_charted, function(event)

@@ -63,19 +63,19 @@ def _read_mod_info():
 
     mods = os.listdir(mods_folder)
 
-    # Update utility first
+    # Update base first
 
-    mod_folder = os.path.join(mods_folder, "Utility")
-    utility_version = _update_mod("Utility", mod_folder)
+    mod_folder = os.path.join(mods_folder, "Base")
+    base_version = _update_mod("Base", mod_folder)
 
     # loop over all mods in the /mods folder
     for folder_name in mods:
-        if folder_name != "Utility":
+        if folder_name != "Base":
             mod_folder = os.path.join(mods_folder, folder_name)
-            _update_mod(folder_name, mod_folder, utility_version)
+            _update_mod(folder_name, mod_folder, base_version)
 
 
-def _update_mod(folder_name, mod_folder, utility_version=None):
+def _update_mod(folder_name, mod_folder, base_version=None):
     print("Updating", folder_name)
     info_file = os.path.join(mod_folder, "mod", "info.json")
 
@@ -122,8 +122,8 @@ def _update_mod(folder_name, mod_folder, utility_version=None):
                 "contact"] = "https://www.reddit.com/message/compose?to=LeonSkills&subject=RsFactorio" + mod_name + "_" + new_version
             mod_info["homepage"] = "https://github.com/LeonSkills/RsFactorio/tree/master/" + folder_name
             mod_info["factorio_version"] = "0.17"
-            if utility_version is not None:
-                mod_info["dependencies"].append("RsUtility >= " + utility_version)
+            if base_version is not None:
+                mod_info["dependencies"].append("RsBase >= " + base_version)
 
         with open(factorio_info_file, "w") as f:
             json.dump(mod_info, f, indent=2)

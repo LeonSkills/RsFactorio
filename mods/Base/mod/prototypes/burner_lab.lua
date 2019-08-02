@@ -1,5 +1,5 @@
-require("__RsUtility__.scripts.prototypes")
-local science_packs = require("__RsUtility__.data.science_packs")
+require("__RsBase__.scripts.prototypes")
+local science_packs = require("__RsBase__.data.science_packs")
 
 local lab_item = {
   name = "rs-burner-lab",
@@ -7,7 +7,7 @@ local lab_item = {
   order = "g[burner-lab]",
   place_result = "rs-burner-lab",
   stack_size = 10,
-  icon = "__RsUtility__/graphics/icons/burner_lab.png",
+  icon = "__RsBase__/graphics/icons/burner_lab.png",
   icon_size = 32
 }
 create_item(lab_item)
@@ -45,10 +45,10 @@ lab.light.color = {
   r = 1
 }
 
-lab.off_animation.layers[1].filename = "__RsUtility__/graphics/entity/burner-lab/lab.png"
-lab.off_animation.layers[1].hr_version.filename = "__RsUtility__/graphics/entity/burner-lab/hr-lab.png"
-lab.on_animation.layers[1].filename = "__RsUtility__/graphics/entity/burner-lab/lab.png"
-lab.on_animation.layers[1].hr_version.filename = "__RsUtility__/graphics/entity/burner-lab/hr-lab.png"
+lab.off_animation.layers[1].filename = "__RsBase__/graphics/entity/burner-lab/lab.png"
+lab.off_animation.layers[1].hr_version.filename = "__RsBase__/graphics/entity/burner-lab/hr-lab.png"
+lab.on_animation.layers[1].filename = "__RsBase__/graphics/entity/burner-lab/lab.png"
+lab.on_animation.layers[1].hr_version.filename = "__RsBase__/graphics/entity/burner-lab/hr-lab.png"
 
 data:extend({
   lab
