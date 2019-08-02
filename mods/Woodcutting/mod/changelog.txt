@@ -1,0 +1,15 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.101
+Date: 2019-07-25
+  Added:
+    - Technology unlocks ability to mine trees. minable is set to false for oak+ trees until its technology is researched
+    - Added fuel values to logs
+    - Created planks (normal, oak, willow, maple, yew, magic). Items, recipes and technologies
+    - Planks as woodcutting science packs
+---------------------------------------------------------------------------------------------------
+Version: 0.1.50
+Date: 2019-07-24
+  Added:
+    - Mod created
+    - Created oak, willow, maple, yew and magic tree entities
+    - Added autoplace for them. Willows are only placed near water. The others need more tweaking (see https://github.com/LeonSkills/RsFactorio/issues/46 )

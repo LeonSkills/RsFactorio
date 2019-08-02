@@ -1,0 +1,11 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.0
+Date: 2019-08-01
+  Added:
+    - Things added
+  Changed:
+    - Things changed (including balancing)
+  Removed:
+    - Things removed
+  Bugfixes:
+    - Things fixed

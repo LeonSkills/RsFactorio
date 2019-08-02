@@ -1,0 +1,26 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2019-07-22
+  Changed:
+    - Moved bars, pickaxes and other intermediates to smithing
+---------------------------------------------------------------------------------------------------
+Version: 0.1.100
+Date: 2019-07-21
+  Added:
+    - Added stone spirits as science packs
+    - Added bar and pickaxe technologies
+    - Added stone spirit recipes and technologies. Shuffled around technologies
+---------------------------------------------------------------------------------------------------
+Version: 0.1.50
+Date: 2019-07-19
+  Added:
+    - Added cables and pickaxes
+    - Changed some vanilla recipes
+    - Added resources to auto generation
+    - Added resources to world presets
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2019-07-06
+  Added:
+    - Added Mining mod
+    - Added rs ore and bar items and recipes
