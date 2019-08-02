@@ -1,9 +1,6 @@
 {
   "name": "PLACEHOLDER",
-  "dependencies": [
-    "base >= 0.17"
-  ],
   "title": "PLACEHOLDER",
   "description": "PLACEHOLDER",
-  "version": "0.0.1"
+  "version": "0.0.0"
 }

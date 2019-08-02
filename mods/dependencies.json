@@ -1,0 +1,33 @@
+{
+  "Base": {},
+  "Farming": {
+    "required": [
+      "Base"
+    ],
+    "optional": [
+      "Woodcutting"
+    ]
+  },
+  "Mining": {
+    "required": [
+      "Base"
+    ]
+  },
+  "Mining_drills": {
+    "required": [
+      "Base",
+      "Smithing"
+    ]
+  },
+  "Smithing": {
+    "required": [
+      "Base",
+      "Mining"
+    ]
+  },
+  "Woodcutting": {
+    "required": [
+      "Base"
+    ]
+  }
+}

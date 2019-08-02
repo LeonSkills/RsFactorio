@@ -18,24 +18,34 @@ Use the issue tracker to make suggestions, report bugs and bring incompatibiliti
 
 -----------
 # Building mods
-Run `build_scripts/build_all.py` to create items and build the mods in the [application directory of Factorio](https://wiki.factorio.com/Application_directory). Currently only tested on windows systems \
-This will check for any changes in each mod. If there are changes these are applied to the mod in the application directory, and the version is automatically increased.  
-Items can be defined in `rs_items.json`. The build all will automatically fetch icons and data about the item from the [runescape wiki](https://runescape.wiki). The only fields that should be manually added are `stack_size`, `subgroup` and `order`.
+Run `build_scripts/build_mods.py` to copy over the mods to the [application directory of Factorio](https://wiki.factorio.com/Application_directory). Currently only tested on windows systems  
+This file accepts some arguments.  
+* `build_scripts/build_mods.py --version patch` will increase the patch version in the version number. Will only increase the version number if changes are made. Do not change the major/minor version, only the patch.
+* `build_scripts/build_mods.py --mods mod1 mod2 mod3` will only update mod1, mod2 and mod3. Case sensitive. 
+* `build_scripts/build_mods.py' --force --mods mod1 mod2 mod3` will force increase the version numbers of mod1, mod2 and mod3, even if there were no changes made. `--mods` is required with this option to prevent accidentally increasing version number of all mods.  
+* `build_scripts/build_mods.py --help` for more options/info.
+
+
+Run `build_scripts/build_items.py` to create items as defined in `rs_items.json`. The will automatically fetch icons and data about the item from the [runescape wiki](https://runescape.wiki). 
+The only fields that should be manually added are `stack_size`, `subgroup` and `order`. 
+It creates lua code that will add the items in game.  
+
+Both scripts can be run with `build_scripts/build_all.py`. This will accept the same arguments as `build_mods.py`.
 
 # Contributing
 Before contributing:
 * Create a new issue if none exist yet
-* Mention within the issue that you will be working on it
+* Mention within the issue that you will be working on it/assign yourself
 * Create a new branch from Develop called \<Issue-number\>-\<ModName\>-\<Issue-name\>. Issue name can be a short version if it is otherwise too long
-* Increase the middle version number of the mod you are going to work on by one
 
 Before creating a pull request into Develop make sure you did the following:
 
 * Changed title, description and name in `mod/info.json`. Note that the name of the mod will be the one defined in `info.json` not the folder name
-* Updated the CHANGELOG.md, preferably with the same message as the commit messages. See `mod_template/CHANGELOG.md` for examples
+* Updated the changelog.txt, preferably with the same message as the commit messages. See `mod_template/mod/changelog.txt` for layout. 
+* Have the version number increased by at least one. Make sure the changelog mentions this version.  
 * Add yourself to the list of contributors in the DESCRIPTION.md
+* Added the correct dependencies in `mods/dependencies.json`
 
-I might automate the latter two at some point if I figure out how and have time
 
 # Disclaimer
 
@@ -43,5 +53,6 @@ Images from RuneScape have been directly taken from the wiki at [https://runesca
 
 Some entities and icons have been taken and modified from the Factorio base game.  
 
-These images belong to Jagex and Wube respectively. If any of these parties need me to remove them for legal reasons, please contact me [https://github.com/LeonSkills/](https://github.com/LeonSkills/)
+These images belong to Jagex and Wube respectively. I do not own them. You are not allowed to distribute, modify or use pictures found in this project for public use without my permission.   
+If any of these parties need me to remove them for legal reasons, please contact me [https://github.com/LeonSkills/](https://github.com/LeonSkills/)
 

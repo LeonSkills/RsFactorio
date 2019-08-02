@@ -1,9 +1,6 @@
 {
   "name": "RsBase",
-  "dependencies": [
-    "base >= 0.17"
-  ],
   "title": "Rs: Base",
   "description": "Base mod for the RsMods.",
-  "version": "0.2.5"
+  "version": "0.3.3"
 }
