@@ -1,0 +1,6 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2019-08-04
+  Added:
+    - Herblore mod created
+    - Added all potions and secondaries as items

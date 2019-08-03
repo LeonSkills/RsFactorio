@@ -12,7 +12,7 @@ import os.path
 user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
 
 headers = {'User-Agent': user_agent, }
-icon_size = 32
+max_icon_size = 32
 
 
 def main():
@@ -46,23 +46,23 @@ def main():
         item_data_changed = False
 
         for item_name, data in item_data.items():
-            rs_name = item_name.replace(" ", "_").lower()
-            icon_location = os.path.join(icons_folder, rs_name + ".png")
+            rs_name = item_name.replace(" ", "_")
+            icon_location = os.path.join(icons_folder, rs_name.lower() + ".png")
 
             # If image is already there assume
             if not os.path.isfile(icon_location) or "icon_size" not in data:
-                icon_size = add_icon(icon_location, rs_name)
+                icon_size = add_icon(icon_location, rs_name, version=data["version"] if "version" in data else None)
                 data["icon_size"] = icon_size
                 item_data_changed = True
 
-            icon = "__" + mod_name + "__/graphics/icons/auto_generated/" + rs_name + ".png"
+            icon = "__" + mod_name + "__/graphics/icons/auto_generated/" + rs_name.lower() + ".png"
             if "icon" not in data or data["icon"] != icon:
                 data["icon"] = icon
                 item_data_changed = True
 
             if "locale_name" not in data:
-                data["rs_name"] = rs_name
-                rs_data = get_rs_data(rs_name)
+                data["rs_name"] = rs_name.lower()
+                rs_data = get_rs_data(rs_name, data["version"] if "version" in data else None)
 
                 data["name"] = "rs-" + item_name.replace(" ", "-").lower()
                 data["type"] = "item"
@@ -141,7 +141,7 @@ def write_locale_file(mod_folder, data):
         f.write(description_string)
 
 
-def get_rs_data(rs_name):
+def get_rs_data(rs_name, version=None):
     print("Fetching data", rs_name)
     rs_data = {}
     file = "https://runescape.wiki/w/Special:ExportRDF/" + rs_name
@@ -160,11 +160,15 @@ def get_rs_data(rs_name):
         return False
     for x in x_list:
         x_loaded = json.loads(x[1])
-        if "version" not in x_loaded or (x_loaded["version"] != "used" and x_loaded["version"] != "broken"):
+
+        if "version" not in x_loaded or \
+                ((version is None and x_loaded["version"] != "used" and x_loaded["version"] != "broken")
+                 or x_loaded["version"] == version):
             rs_data["examine"] = x_loaded["examine"]
+            print(rs_data["examine"])
             name = x_loaded["name"]
             # armour set stuff
-            name = name.replace(" (lg)", "").replace("--28lg-29", "")
+            name = name.replace(" (lg)", "").replace("--28lg-29", "").replace(" (3)", "").replace(" (6)", "")
 
             rs_data["locale_name"] = name
             factorio_name = "rs-" + name.lower().replace("_", "-").replace(" ", "-")
@@ -175,8 +179,11 @@ def get_rs_data(rs_name):
     return rs_data
 
 
-def add_icon(icon_location, rs_name, use_detailed=False):
+def add_icon(icon_location, rs_name, use_detailed=False, version=None):
     print("Fetching icon", rs_name)
+    if version:
+        rs_name += "_"+version
+
     if use_detailed:
         rs_name += "_detail"
 
@@ -197,7 +204,7 @@ def add_icon(icon_location, rs_name, use_detailed=False):
     img = Image.open(file)
     x, y = img.size
     m = max(x, y)
-    im_size = max(m, icon_size)
+    im_size = max(m, max_icon_size)
     bg = Image.new("RGBA", (im_size, im_size), (0, 0, 0, 0))
     # img = img.resize((math.floor(x/m*icon_size), math.floor(y/m*icon_size)), Image.ANTIALIAS)
     # x, y = img.size
