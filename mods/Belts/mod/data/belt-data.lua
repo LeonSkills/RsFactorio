@@ -15,7 +15,9 @@ local belts = {
     splitter_result_amount = 1,
     loader_ingredients = {{"rs-bronze-bar", 2}, {"rs-plank", 5}, {"electronic-circuit", 1}, {"rs-wooden-transport-belt", 5}, {"burner-inserter", 5}},
     loader_result_amount = 1,
-    tech_count = 5
+    tech_count = 5,
+    level = 1,
+    prerequisites = {},
   },
   [2] = {
     name = "oak",
@@ -33,7 +35,9 @@ local belts = {
     loader_ingredients = {{"rs-iron-bar", 5}, {"rs-oak-plank", 5}, {"rs-bronze-nails", 5}, {"electronic-circuit", 5}, {"rs-oak-transport-belt", 5}, {"inserter", 5}},
     loader_result_amount = 1,
     vanilla_equiv = "",
-    tech_count = 20
+    tech_count = 20,
+    level = 10,
+    prerequisites = {"rs-oak-plank", "rs-iron-processing"},
   },
   [3] = {
     name = "willow",
@@ -51,7 +55,9 @@ local belts = {
     loader_ingredients = {{"rs-mithril-bar", 5}, {"rs-willow-plank", 10}, {"rs-iron-nails", 5}, {"electronic-circuit", 10}, {"rs-willow-transport-belt", 5}, {"long-handed-inserter", 5}, {"rs-oak-loader", 1}},
     loader_result_amount = 1,
     vanilla_equiv = "fast-",
-    tech_count = 200
+    tech_count = 200,
+    level = 30,
+    prerequisites = {"rs-willow-plank", "rs-mithril-processing"},
   },
   [4] = {
     name = "maple",
@@ -67,7 +73,10 @@ local belts = {
     splitter_ingredients = {{"rs-orikalkum-bar", 10}, {"rs-maple-plank", 8}, {"advanced-circuit", 10}, {"rs-willow-splitter", 1}},
     splitter_result_amount = 1,
     loader_ingredients = {{"rs-orikalkum-bar", 5}, {"rs-maple-plank", 20}, {"rs-steel-nails", 5}, {"advanced-circuit", 10}, {"rs-maple-transport-belt", 5}, {"filter-inserter", 5}, {"rs-willow-loader", 1}},
-    loader_result_amount = 1
+    loader_result_amount = 1,
+    tech_count = 300,
+    level = 50,
+    prerequisites = {"rs-maple-plank", "rs-orikalkum-processing"},
   },
   [5] = {
     name = "yew",
@@ -82,7 +91,10 @@ local belts = {
     splitter_ingredients = {{"rs-necronium-bar", 10}, {"rs-yew-plank", 12}, {"advanced-circuit", 20}, {"rs-maple-splitter", 1}},
     splitter_result_amount = 1,
     loader_ingredients = {{"rs-necronium-bar", 5}, {"rs-yew-plank", 30}, {"rs-mithril-nails", 5}, {"advanced-circuit", 20}, {"rs-yew-transport-belt", 5}, {"fast-inserter", 5}, {"rs-maple-loader", 1}},
-    loader_result_amount = 1
+    loader_result_amount = 1,
+    tech_count = 500,
+    level = 70,
+    prerequisites = {"rs-yew-plank", "rs-necronium-processing"},
   },
   [6] = {
     name = "magic",
@@ -97,7 +109,10 @@ local belts = {
     splitter_ingredients = {{"rs-elder-rune-bar", 10}, {"rs-magic-plank", 18}, {"processing-unit", 40}, {"rs-yew-splitter", 1}},
     splitter_result_amount = 1,
     loader_ingredients = {{"rs-elder-rune-bar", 5}, {"rs-magic-plank", 35}, {"rs-rune-nails", 5}, {"processing-unit", 40}, {"rs-magic-transport-belt", 5}, {"stack-filter-inserter", 5}, {"rs-yew-loader", 1}},
-    loader_result_amount = 1
+    loader_result_amount = 1,
+    tech_count = 1000,
+    level = 90,
+    prerequisites = {"rs-magic-plank", "rs-elder-rune-processing"},
   },
 }
 return belts

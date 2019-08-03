@@ -27,7 +27,7 @@ for tier, item_data in pairs(belts) do
   belt.icon = "__RsBelts__/graphics/icons/"..material.."-transport-belt.png"
   belt.minable.result = belt_name
   belt.speed = item_data.speed * base_belt_speed
-  belt.localised_name = {"belts.transport-belt", {"material.rs-"..material.."-c"}}
+  belt.localised_name = {"belts.transport-belt", {"material.Rs-"..material}}
   if item_data.next_upgrade ~= nil then
     belt.next_upgrade = get_vanilla_name("rs-"..item_data.next_upgrade.."-transport-belt")
   else
@@ -44,7 +44,7 @@ for tier, item_data in pairs(belts) do
   underground.icon = "__RsBelts__/graphics/icons/".. material .."-underground-belt.png"
   underground.minable.result = underground_name
   underground.speed = item_data.speed * base_belt_speed
-  underground.localised_name = {"belts.underground-belt", {"material.rs-"..material.."-c"}}
+  underground.localised_name = {"belts.underground-belt", {"material.Rs-"..material}}
   if item_data.next_upgrade ~= nil then
     underground.next_upgrade = get_vanilla_name("rs-"..item_data.next_upgrade.."-underground-belt")
   else
@@ -70,7 +70,7 @@ for tier, item_data in pairs(belts) do
   splitter.icon = "__RsBelts__/graphics/icons/".. material .."-splitter.png"
   splitter.minable.result = splitter_name
   splitter.speed = item_data.speed * base_belt_speed
-  splitter.localised_name = {"belts.splitter", {"material.rs-"..material.."-c"}}
+  splitter.localised_name = {"belts.splitter", {"material.Rs-"..material}}
   if item_data.next_upgrade ~= nil then
     splitter.next_upgrade = get_vanilla_name("rs-"..item_data.next_upgrade.."-splitter")
   else
@@ -86,7 +86,7 @@ for tier, item_data in pairs(belts) do
   loader.name = loader_name
   loader.order = "rs-belts-004-loader-"..add_leading_zeros(tier, 3).."-".. loader_name
   loader.speed = item_data.speed * base_belt_speed
-  loader.localised_name = {"belts.loader", {"material."..material.."-c"}}
+  loader.localised_name = {"belts.loader", {"material.Rs-"..material}}
   if item_data.next_upgrade ~= nil then
     loader.next_upgrade = get_vanilla_name("rs-"..item_data.next_upgrade.."-loader")
   else

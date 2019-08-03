@@ -14,5 +14,17 @@ return {
   ["rs-bronze-mining-drill"] = "burner-mining-drill",
   ["rs-steel-mining-drill"] = "electric-mining-drill",
   ["rs-logs"] = "wood",
-  ["rs-oak-seed"] = "rs-acorn"
+  ["rs-oak-seed"] = "rs-acorn",
+  ["rs-oak-transport-belt"] = "transport-belt",
+  ["rs-oak-underground-belt"] = "underground-belt",
+  ["rs-oak-splitter"] = "splitter",
+  ["rs-oak-loader"] = "loader",
+  ["rs-willow-transport-belt"] = "fast-transport-belt",
+  ["rs-willow-underground-belt"] = "fast-underground-belt",
+  ["rs-willow-splitter"] = "fast-splitter",
+  ["rs-willow-loader"] = "fast-loader",
+  ["rs-maple-transport-belt"] = "express-transport-belt",
+  ["rs-maple-underground-belt"] = "express-underground-belt",
+  ["rs-maple-splitter"] = "express-splitter",
+  ["rs-maple-loader"] = "express-loader"
 }

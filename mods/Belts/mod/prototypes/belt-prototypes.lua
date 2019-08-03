@@ -15,7 +15,8 @@ for tier, item_data in pairs(belts) do
     subgroup = "rs-transport-belt",
     icon = "__RsBelts__/graphics/icons/"..material.."-transport-belt.png",
     icon_size = 32,
-    stack_size = 100
+    stack_size = 100,
+    localised_name = {"belts.transport-belt", {"material.Rs-"..material}}
   }, true)
 
   create_recipe({
@@ -33,7 +34,8 @@ for tier, item_data in pairs(belts) do
     subgroup = "rs-underground-belt",
     icon = "__RsBelts__/graphics/icons/"..material.."-underground-belt.png",
     icon_size = 32,
-    stack_size = 50
+    stack_size = 50,
+    localised_name = {"belts.underground-belt", {"material.Rs-"..material}}
   }, true)
 
   create_recipe({
@@ -50,7 +52,8 @@ for tier, item_data in pairs(belts) do
     subgroup = "rs-splitter",
     icon = "__RsBelts__/graphics/icons/"..material.."-splitter.png",
     icon_size = 32,
-    stack_size = 50
+    stack_size = 50,
+    localised_name = {"belts.splitter", {"material.Rs-"..material}}
   }, true)
 
   create_recipe({
@@ -67,7 +70,9 @@ for tier, item_data in pairs(belts) do
     subgroup = "rs-loader",
     icon = "__RsBelts__/graphics/icons/"..material.."-loader.png",
     icon_size = 32,
-    stack_size = 50
+    stack_size = 50,
+    flags = {},
+    localised_name = {"belts.loader", {"material.Rs-"..material}}
   }, true)
 
   create_recipe({
@@ -75,6 +80,7 @@ for tier, item_data in pairs(belts) do
     ingredients = item_data.loader_ingredients,
     results = {{loader_name, item_data.loader_result_amount}},
     category = "crafting",
-    energy_required = 1.2 * tier * 3
+    energy_required = 1.2 * tier * 3,
+    enabled = false
   })
 end
