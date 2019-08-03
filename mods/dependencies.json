@@ -39,5 +39,15 @@
     "optional": [
       "Farming"
     ]
+  },
+  "AssemblingMachines": {
+    "required": [
+      "Base",
+      "Woodcutting",
+      "Smithing"
+    ],
+    "optional": [
+      "Farming"
+    ]
   }
 }

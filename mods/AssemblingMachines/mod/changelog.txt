@@ -1,0 +1,6 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2019-08-03
+  Added:
+    - Created RsAssemblers mod
+    - Added assemblers (items, recipes, entities, technologies). Bronze, steel, adamant, rune, necronium and elder-rune.
