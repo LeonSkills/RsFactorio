@@ -7,9 +7,9 @@ local bronze_nails = {
     {"rs-bronze-bar", 1}
   },
   results = {
-    {"rs-bronze-nails", 5}
+    {"rs-bronze-nails", 15}
   },
-  energy_required = 1.2
+  energy_required = 0.6
 }
 create_recipe(bronze_nails)
 
@@ -20,9 +20,9 @@ local iron_nails = {
     {"rs-iron-bar", 1}
   },
   results = {
-    {"rs-iron-nails", 5}
+    {"rs-iron-nails", 15}
   },
-  energy_required = 1.2
+  energy_required = 0.6
 }
 create_recipe(iron_nails)
 
@@ -33,9 +33,9 @@ local steel_nails = {
     {"rs-steel-bar", 1}
   },
   results = {
-    {"rs-steel-nails", 5}
+    {"rs-steel-nails", 15}
   },
-  energy_required = 1.2
+  energy_required = 0.6
 }
 create_recipe(steel_nails)
 
@@ -46,9 +46,9 @@ local mithril_nails = {
     {"rs-mithril-bar", 1}
   },
   results = {
-    {"rs-mithril-nails", 5}
+    {"rs-mithril-nails", 15}
   },
-  energy_required = 1.2
+  energy_required = 0.6
 }
 create_recipe(mithril_nails)
 
@@ -59,9 +59,9 @@ local adamant_nails = {
     {"rs-adamant-bar", 1}
   },
   results = {
-    {"rs-adamant-nails", 5}
+    {"rs-adamant-nails", 15}
   },
-  energy_required = 1.2
+  energy_required = 0.6
 }
 create_recipe(adamant_nails)
 
@@ -72,9 +72,9 @@ local rune_nails = {
     {"rs-rune-bar", 1}
   },
   results = {
-    {"rs-rune-nails", 5}
+    {"rs-rune-nails", 15}
   },
-  energy_required = 1.2
+  energy_required = 0.6
 }
 create_recipe(rune_nails)
 

@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 2019-08-03
+  Added:
+    - Created belt mod
+    - Added belt items, recipes and entities (wood, oak, willow, maple, yew and magic)
+    - Added belt technologies. Loaders not unlockable for the moment.

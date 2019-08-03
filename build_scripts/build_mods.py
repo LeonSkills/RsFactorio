@@ -5,6 +5,7 @@ import os
 import shutil
 import sys
 import argparse
+import time
 
 
 def main():
@@ -184,6 +185,7 @@ def _update_mod(mod_name_folder, mod_folder, mod_data):
     factorio_mod_folder = os.path.join(appdata, "Factorio", "mods", mod_name + "_" + version)
     if not os.path.exists(factorio_mod_folder):
         os.mkdir(factorio_mod_folder)
+        folder_modified_time = time.time()
     # Nothing has changed in this mod since last modification. Skip
     is_changed = False
     if version_modified_time != folder_modified_time:
@@ -247,4 +249,4 @@ def _update_mod(mod_name_folder, mod_folder, mod_data):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    main()
