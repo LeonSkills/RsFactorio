@@ -71,7 +71,7 @@ local assemblers = {
     drain = "100kW",
     energy_consumption = "2.5MW",
     tech_count = 1500,
-    level = 90,
+    level = 99,
     prerequisites = {"rs-magic-plank", "rs-elder-rune-processing", "speed-module-3"}
   }
 }

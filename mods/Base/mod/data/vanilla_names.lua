@@ -26,5 +26,8 @@ return {
   ["rs-maple-transport-belt"] = "express-transport-belt",
   ["rs-maple-underground-belt"] = "express-underground-belt",
   ["rs-maple-splitter"] = "express-splitter",
-  ["rs-maple-loader"] = "express-loader"
+  ["rs-maple-loader"] = "express-loader",
+  ["rs-oak-assembling-machine"] = "assembling-machine-1",
+  ["rs-adamant-assembling-machine"] = "assembling-machine-2",
+  ["rs-rune-assembling-machine"] = "assembling-machine-3"
 }

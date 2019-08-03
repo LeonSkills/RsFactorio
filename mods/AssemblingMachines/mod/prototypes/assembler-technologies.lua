@@ -1,6 +1,6 @@
 
-require("__RsUtility__.utility.prototypes")
-require("__RsUtility__.utility.util")
+require("__RsBase__.scripts.prototypes")
+require("__RsBase__.scripts.utility")
 local assemblers = require("data.assembler-data")
 
 local prev_tech
@@ -12,35 +12,26 @@ for tier, item_data in pairs(assemblers) do
     else
       tech_name = "automation-"..(tier-1)
     end
-    local tech = get_prototype(tech_name, "technology")
-    tech.icon = "__base__/graphics/technology/automation.png"
-    tech.icon_size = 128
-    tech.localised_description = {
-        "technology-description."..tech_name
-      }
-    tech.order = "rs-technology-automation-"..add_leading_zeros(tier, 3)
-
-    tech.prerequisites = item_data.prerequisites
-
-    if prev_tech then
-      table.insert(tech.prerequisites, prev_tech)
-    end
-
-    local ingredients
-    if mods["RsSmithing"] then
-      ingredients = to_packs(item_data.mod_ingredients)
-    else
-      ingredients = to_packs(item_data.vanilla_ingredients)
-    end
-
-    tech.unit = {
-      count = item_data.tech_count,
-      ingredients = ingredients,
-      time = item_data.tech_time
-    }
-
-    table.insert(tech.prerequisites, ingredients[#ingredients][1])
-
+    local prerequisites = item_data.prerequisites or {}
+    table.insert(prerequisites, prev_tech)
+    create_technology({
+      name = tech_name,
+      recipes_to_unlock = {
+        "rs-"..item_data.material.."-assembling-machine"
+      },
+      unit = {
+        count = item_data.tech_count,
+        time = 15
+      },
+      levels = {
+        ["construction"] = item_data.level,
+        ["woodcutting"] = item_data.level,
+        ["smithing"] = item_data.level
+      },
+      icon = "__base__/graphics/technology/automation.png",
+      icon_size = 128,
+      extra_prerequisites = prerequisites
+    }, false, true, true)
     prev_tech = tech_name
   end
 end
