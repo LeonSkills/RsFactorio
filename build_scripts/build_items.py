@@ -23,10 +23,10 @@ def main():
     mods = os.listdir(mods_folder)
 
     for folder_name in mods:
-        print(folder_name)
         mod_folder = os.path.join(mods_folder, folder_name)
         if not os.path.isdir(mod_folder):
             continue
+        print("Checking items for ", folder_name)
 
         with open(os.path.join(mod_folder, "mod", "info.json")) as f:
             mod_name = json.load(f)["name"]

@@ -29,5 +29,15 @@
     "required": [
       "Base"
     ]
+  },
+  "Belts": {
+    "required": [
+      "Base",
+      "Woodcutting",
+      "Smithing"
+    ],
+    "optional": [
+      "Farming"
+    ]
   }
 }

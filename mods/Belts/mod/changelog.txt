@@ -1,0 +1,6 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2019-08-02
+  Added:
+    - Created belt mod
+    - Added belt items, recipes and entities (wood, oak, willow, maple, yew and magic)
