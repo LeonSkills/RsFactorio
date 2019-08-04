@@ -125,7 +125,7 @@ return {
     price = 700000
   },
   ["overload-salve"] = {
-    potions = {{"rs-overload", 3},
+    potions = {{"rs-overload", 4},
               {"rs-super-antifire", 2},
               {"rs-antifire", 2},
               {"rs-prayer-renewal", 2},
@@ -155,11 +155,11 @@ return {
   ["supreme-overload-salve"] = { -- Best speed module that can be used for all recipes
     potions = {{"rs-supreme-overload-potion", 3},
               {"rs-overload-salve", 2},
-              {"rs-super-antifire", 1},
-              {"rs-antifire", 1},
-              {"rs-prayer-renewal", 1},
-              {"rs-prayer-potion", 1},
-              {"rs-super-antipoison", 1}},
+              {"rs-super-antifire", 2},
+              {"rs-antifire", 2},
+              {"rs-prayer-renewal", 2},
+              {"rs-prayer-potion", 2},
+              {"rs-super-antipoison", 2}},
     level = 99,
     price = 100000
   },
