@@ -4,3 +4,8 @@ Date: 2019-08-04
   Added:
     - Herblore mod created
     - Added all potions and secondaries as items
+    - Added recipes for potions
+    - Added unf potions and recipes
+    - Added unf fluids
+    - Added vialling/unvialling, similar to barrelling
+    - Added 4 different ways to create unf fluids: (vial of water, water fluid)\tensor (potion (unf), unfinished fluid). Only one shows up in menu
