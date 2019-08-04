@@ -30,6 +30,21 @@ return {
   ["farming-30"] = "rs-willow-roots",
   ["farming-45"] = "rs-maple-roots",
   ["farming-60"] = "rs-yew-roots",
-  ["farming-75"] = "rs-magic-roots"
+  ["farming-75"] = "rs-magic-roots",
+  ["herblore-1"] = "rs-attack-potion",
+  ["herblore-15"] = "rs-serum-207",
+  ["herblore-18"] = "rs-guthix-rest",
+  ["herblore-25"] = "rs-prayer-potion",
+  ["herblore-34"] = "rs-agility-potion",
+  ["herblore-40"] = "rs-summoning-potion",
+  ["herblore-48"] = "rs-super-antipoison",
+  ["herblore-57"] = "rs-luck-potion",
+  ["herblore-58"] = "rs-fletching-potion",
+  ["herblore-65"] = "rs-grand-strength-potion",
+  ["herblore-70"] = "rs-grand-defence-potion",
+  ["herblore-77"] = "rs-stamina-potion",
+  ["herblore-81"] = "rs-saradomin-brew",
+  ["herblore-89"] = "rs-wyrmfire-potion",
+  ["herblore-96"] = "rs-super-prayer-renewal-potion"
 
 }

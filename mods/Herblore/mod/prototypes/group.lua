@@ -22,7 +22,29 @@ data:extend({
   {
     type = "item-subgroup",
     name = "rs-herblore-secondaries",
-    order = "rs-herblore-030-secondaries",
+    order = "rs-herblore-010-secondaries",
+    group = "rs-herblore"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-herblore-items",
+    order = "rs-herblore-000-herblore-items",
+    group = "rs-herblore"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-unfinished-potions",
+    order = "rs-herblore-007-unf",
+    group = "rs-herblore"
+  },
+  {
+    type = "item-subgroup",
+    name = "rs-unfinished-fluids",
+    order = "rs-herblore-006-unf",
     group = "rs-herblore"
   }
 })
+
+-- move clean herbs to herblore
+data.raw["item-subgroup"]["rs-clean-herbs"].group = "rs-herblore"
+data.raw["item-subgroup"]["rs-clean-herbs"].order = "rs-herblore-005-clean-herbs"
