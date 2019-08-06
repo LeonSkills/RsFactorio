@@ -186,6 +186,7 @@ def add_icon(icon_location, rs_name, use_detailed=False, version=None):
 
     if use_detailed:
         rs_name += "_detail"
+        # max_icon_size = 256
 
     url = "https://runescape.wiki/w/File:" + rs_name + ".png"
 
