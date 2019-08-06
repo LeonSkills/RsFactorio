@@ -11,7 +11,6 @@ for potion_name, data in pairs(potions) do
     table.insert(ingredients, secondary)
   end
   local results = {{factorio_name, 1}}
-  print(potion_name, ingredients)
   create_recipe({
     name = factorio_name,
     category = "rs-herblore",

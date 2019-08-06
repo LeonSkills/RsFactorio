@@ -139,7 +139,7 @@ return {
     level = 63
   },
   ["super-hunter"] = {
-    herb = nil, -- TODO, can come up with a random one
+    herb = "snapdragon",
     secondaries = {"rabbit-teeth"},
     extra_ingredients = {{"rs-hunter-potion", 2}},
     level = 64
@@ -167,7 +167,7 @@ return {
     level = 69
   },
   ["super-divination"] = {
-    herb = nil, -- TODO, can come up with a random one
+    herb = "avantoe",
     secondaries = {"zygomite-fruit"},
     extra_ingredients = {{"rs-divination-potion", 2}},
     level = 70
@@ -179,12 +179,12 @@ return {
     level = 72
   },
   ["weapon-poison+"] = {
-    herb = nil, -- TODO, come up with a random one
+    herb = "kwuarm",
     secondaries = {"red-spiders'-eggs", "cactus-spine"},
     level = 73
   },
   ["super-runecrafting"] = {
-    herb = nil, -- TODO
+    herb = "irit", 
     secondaries = {"yak-milk"},
     extra_ingredients = {{"rs-runecrafting-potion", 2}},
     level = 75
@@ -217,7 +217,7 @@ return {
     level = 79
   },
   ["extreme-hunter"] = {
-    herb = nil, -- TODO
+    herb = "cadantine", 
     secondaries = {"bull-horns"},
     extra_ingredients = {{"rs-super-hunter", 4}},
     level = 80
@@ -228,7 +228,7 @@ return {
     level = 81
   },
   ["weapon-poison++"] = {
-    herb = nil, -- TODO
+    herb = "torstol", 
     secondaries = {"cave-nightshade", "poison-ivy-berries"},
     level = 82
   },
@@ -238,24 +238,24 @@ return {
     level = 82
   },
   ["adrenaline-potion"] = {
-    herb = nil, -- TODO
+    herb = "dwarf-weed", 
     secondaries = {"papaya-fruit", "super-energy"},
     level = 84
   },
   ["super-antifire"] = {
-    herb = nil, -- TODO
+    herb = "snapdragon", 
     secondaries = {"phoenix-feather"},
     extra_ingredients = {{"rs-antifire", 2}},
     level = 85
   },
   ["super-adrenaline-potion"] = {
-    herb = nil, -- TODO
+    herb = "bloodweed", 
     secondaries = {"adrenaline-crystal"},
     extra_ingredients = {{"rs-adrenaline-potion", 3}},
     level = 87
   },
   ["super-invention"] = {
-    herb = nil, -- TODO
+    herb = "arbuck", 
     secondaries = {"spider-fangs"},
     extra_ingredients = {{"rs-invention-potion", 2}},
     level = 87
@@ -273,7 +273,7 @@ return {
     level = 89
   },
   ["extreme-divination"] = {
-    herb = nil, -- TODO
+    herb = "cadantine", 
     secondaries = {"yak-tuft"},
     extra_ingredients = {{"rs-super-divination", 4}},
     level = 89
@@ -291,43 +291,43 @@ return {
     level = 90
   },
   ["extreme-magic"] = {
-    herb = nil, -- TODO
+    herb = "torstol", 
     secondaries = {"ground-mud-runes"},
     extra_ingredients = {{"rs-super-magic-potion", 4}},
     level = 91
   },
   ["extreme-runecrafting"] = {
-    herb = nil, -- TODO
+    herb = "lantadyme", 
     secondaries = {"spider-venom"},
     extra_ingredients = {{"rs-super-runecrafting", 4}},
     level = 91
   },
   ["extreme-ranging"] = {
-    herb = nil, -- TODO
+    herb = "arbuck", 
     secondaries = {},
     extra_ingredients = {{"rs-grenwall-spikes", 5}, {"rs-super-ranging-potion", 4}},
     level = 92
   },
   ["super-saradomin-brew"] = {
-    herb = nil, -- TODO
+    herb = "lantadyme", 
     secondaries = {"wine-of-saradomin"},
     extra_ingredients = {{"rs-saradomin-brew", 2}},
     level = 93
   },
   ["super-zamorak-brew"] = {
-    herb = nil, -- TODO
+    herb = "torstol", 
     secondaries = {"wine-of-zamorak"},
     extra_ingredients = {{"rs-zamorak-brew", 2}},
     level = 93
   },
   ["super-guthix-rest"] = {
-    herb = nil, -- TODO
+    herb = "dwarf-weed",
     secondaries = {"wine-of-guthix"},
     extra_ingredients = {{"rs-guthix-rest", 2}},
     level = 93
   },
   ["super-prayer"] = {
-    herb = nil, -- TODO
+    herb = "arbuck",
     secondaries = {"wyvern-bonemeal"},
     extra_ingredients = {{"rs-prayer-potion", 2}},
     level = 94
@@ -339,19 +339,18 @@ return {
     level = 94
   },
   ["extreme-invention"] = {
-    herb = nil, -- TODO
+    herb = "fellstalk",
     secondaries = {"mycelial-webbing"},
     extra_ingredients = {{"rs-super-invention", 4}},
     level = 95
   },
   ["overload"] = {
-    herb = nil,
+    herb = "torstol",
     secondaries = {"extreme-attack",
                    "extreme-strength",
                    "extreme-defence",
                    "extreme-magic",
                    "extreme-ranging"},
-    extra_ingredients = {{"rs-clean-torstol", 1}},
     level = 96
   }
 }

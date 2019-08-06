@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: 2019-08-04
+Date: 2019-08-06
   Added:
     - Herblore mod created
     - Added all potions and secondaries as items
@@ -9,3 +9,4 @@ Date: 2019-08-04
     - Added unf fluids
     - Added vialling/unvialling, similar to barrelling
     - Added 4 different ways to create unf fluids: (vial of water, water fluid)\tensor (potion (unf), unfinished fluid). Only one shows up in menu
+    - Added technologies. For now potions are tied to herb used, not runescape level
