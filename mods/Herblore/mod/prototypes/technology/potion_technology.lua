@@ -30,7 +30,9 @@ for herb, herb_data in pairs(herbs) do
     },
     icon = "__RsHerblore__/graphics/technology/clean_"..herb:gsub("-", "_")..".png",
     icon_size=512,
-    extra_prerequisites = {prev_tech}
+    extra_prerequisites = {prev_tech},
+    localised_name = {"herb-processing",  {"herb.Rs-"..herb}},
+    localised_description = {"herb-processing-description", {"herb.rs-"..herb}}
   })
   prev_tech = "rs-"..herb.."-processing"
 
@@ -65,7 +67,9 @@ for potion_name, potion_data in pairs(potions) do
         },
         icon = "__RsHerblore__/graphics/technology/"..potion_name:gsub("-", "_")..".png",
         icon_size = 512,
-        extra_prerequisites = {herb_tech.name}
+        extra_prerequisites = {herb_tech.name},
+        localised_description = data.raw.tool[fact_name].localised_description,
+        localised_name = data.raw.tool[fact_name].localised_name
       })
     else
       table.insert(herb_tech.effects,{type = "unlock-recipe", recipe = fact_name})
@@ -101,6 +105,8 @@ for potion_name, potion_data in pairs(comp_potion) do
     },
     icon = "__RsHerblore__/graphics/technology/"..potion_name:gsub("-", "_")..".png",
     icon_size = 256,
-    extra_prerequisites = prereqs
+    extra_prerequisites = prereqs,
+    localised_name = {"item-name.".. fact_name},
+    localised_description = {"item-description."..fact_name}
   })
 end
