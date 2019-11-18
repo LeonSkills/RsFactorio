@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2019-11-18
+  Added:
+    - Added locale
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2019-08-06
   Added:
@@ -8,5 +13,5 @@ Date: 2019-08-06
     - Added unf potions and recipes
     - Added unf fluids
     - Added vialling/unvialling, similar to barrelling
-    - Added 4 different ways to create unf fluids: (vial of water, water fluid)\tensor (potion (unf), unfinished fluid). Only one shows up in menu
+    - Added 4 different ways to create unf fluids: (vial of water, water fluid) to (potion (unf), unfinished fluid). Only one shows up in menu
     - Added technologies. For now potions are tied to herb used, not runescape level
