@@ -25,7 +25,7 @@ local function create_subgroup(item)
 end
 
 
-local function create_recipe_duplicate(item)
+local function create_recipe_duplicate(item, original_recipe)
   local recipe =  {
     type = "recipe",
     name = item.name.."-unpack",
@@ -35,16 +35,13 @@ local function create_recipe_duplicate(item)
     result = item.name..'-entity',
     result_count = 1,
     energy_required = 0.01,
-    enabled = item.enabled or true,  -- todo
-    hidden = item.flags and contains(item.flags, "hidden")
+    enabled = original_recipe.enabled,
+    hidden = original_recipe.hidden
   }
-  if not data.raw["item-subgroup"][recipe.subgroup] then
-    create_subgroup(item)
-  end
   return recipe
 end
 
-local function create_invert_recipe(item)
+local function create_invert_recipe(item, original_recipe)
   local recipe = {
     type = "recipe",
     name = item.name.."-pack",
@@ -54,13 +51,19 @@ local function create_invert_recipe(item)
     result = item.name,
     result_count = 1,
     energy_required = 0.01,
-    enabled = item.enabled or true,  -- todo
-    hidden = item.flags and contains(item.flags, "hidden")
+    enabled = original_recipe.enabled,
+    hidden = original_recipe.hidden
   }
-  if not data.raw["item-subgroup"][recipe.subgroup] then
+  return recipe
+end
+
+local function create_flatpack_recipes(item, recipe)
+  local recipe_duplicate = create_recipe_duplicate(item, recipe)
+  local recipe_invert = create_invert_recipe(item, recipe)
+  if not data.raw["item-subgroup"][recipe_duplicate.subgroup] then
     create_subgroup(item)
   end
-  return recipe
+  return recipe_duplicate, recipe_invert
 end
 
 local function create_item_duplicate(item, entity)
@@ -120,11 +123,10 @@ for name, item in pairs(data.raw.item) do
     local entity = get_minable_entity(item.place_result)
     if entity == nil or (entity.type ~= "construction-robot" and entity.type ~= "logistic-robot") then
       local item_duplicate = create_item_duplicate(item, entity)
-      local recipe_duplicate = create_recipe_duplicate(item)
-      local recipe_invert = create_invert_recipe(item)
+      local recipe1, recipe2 = create_flatpack_recipes(item)
       table.insert(items, item_duplicate)
-      table.insert(recipes, recipe_duplicate)
-      table.insert(recipes, recipe_invert)
+      table.insert(recipes, recipe1)
+      table.insert(recipes, recipe2)
       change_entity_mineable(entity, item, name, item_duplicate)
       change_item_properties(item, item_duplicate)
     end
