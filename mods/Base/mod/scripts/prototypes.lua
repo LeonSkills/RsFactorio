@@ -164,6 +164,14 @@ function create_technology(technology, overwrite_effects, overwrite_prereqs, lev
   return prototype
 
 end
+
+function get_minable_entity(name)
+  for prototype, _ in pairs(data.raw) do
+    if data.raw[prototype][name] and data.raw[prototype][name].minable then
+      return data.raw[prototype][name]
+    end
+  end
+end
 --function create_prototype(params)
 ----function create_prototype(name, order, subgroup, stack_size, ingredients, energy_required, localised_name, localised_description, category, technology, hidden, is_entity, result_count)
 --

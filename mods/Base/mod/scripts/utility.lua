@@ -27,3 +27,44 @@ function format_number(amount, delimiter)
   end
   return formatted
 end
+
+function tprint (tbl, indent)
+  if not indent then indent = 2 end
+  if not tbl then
+    print(nil)
+  end
+  for k, v in pairs(tbl) do
+    formatting = string.rep("  ", indent) .. k .. ": "
+    if type(v) == "table" then
+      print(formatting)
+      tprint(v, indent+1)
+    elseif type(v) == 'boolean' then
+      print(formatting .. tostring(v))
+    else
+      print(formatting .. v)
+    end
+  end
+end
+
+function union ( a, b )
+    local result = {}
+    for k,v in pairs ( a ) do
+        table.insert( result, v )
+    end
+    for k,v in pairs ( b ) do
+         table.insert( result, v )
+    end
+    return result
+end
+
+function tablefind(tab,el)
+    for index, value in pairs(tab) do
+        if value == el then
+            return index
+        end
+    end
+end
+
+function remove(tbl, element)
+  table.remove(tbl, tablefind(tbl, element))
+end

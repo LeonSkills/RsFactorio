@@ -55,5 +55,13 @@
       "Base",
       "Farming"
     ]
+  },
+  "Construction": {
+    "required": [
+      "Base"
+    ],
+    "optional": [
+      "Smithing"
+    ]
   }
 }
