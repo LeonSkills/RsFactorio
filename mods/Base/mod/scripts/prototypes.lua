@@ -21,14 +21,14 @@ function get_prototype(name, prototype)
   end
   local proto = data.raw[prototype][name]
   if prototype == "recipe" then
-    proto.ingredients = {}
+    proto.ingredients = proto.ingredients or {}
     proto.normal = nil
     proto.expensive = nil
   elseif prototype == "technology" then
-    proto.prerequisites = {}
-    proto.effects = {}
+    proto.prerequisites = proto.prerequisites or {}
+    proto.effects = proto.effects or {}
   elseif prototype == "equipment-grid" then
-    proto.equipment_categories = {}
+    proto.equipment_categories = proto.equipment_categories or {}
   end
   return proto
 end
@@ -94,6 +94,23 @@ function create_recipe(recipe)
   return prototype
 end
 
+function get_technology_level(technology)
+  if technology.rs_level then
+    return technology.rs_level
+  end
+  if technology.unit.count then
+    technology.rs_level = math.min(98, technology.unit.count/10)
+  else
+    technology.rs_level = #(technology.unit.ingredients - 1) * 16 + 1
+  end
+  if technology.prerequisites then
+    for _, preq in pairs(technology.prerequisites) do
+      technology.rs_level = math.max(technology.rs_level, get_technology_level(data.raw.technology[preq]))
+    end
+  end
+  return technology.rs_level
+end
+
 function create_technology(technology, overwrite_effects, overwrite_prereqs, level_including)
   --level including indicates whether the science packs of technology.level should be included
 
@@ -139,6 +156,7 @@ function create_technology(technology, overwrite_effects, overwrite_prereqs, lev
     if type(levels) ~= "table" then
       levels = {0, levels}
     end
+    technology.rs_level = technology.rs_level or levels[2]
     assert(#levels == 2)
     for i=levels[1], levels[2] -level_offset, 1 do
       local science_pack = science_packs[skill .. "-" .. i]

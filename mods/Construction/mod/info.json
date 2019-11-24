@@ -2,5 +2,5 @@
   "name": "RsConstruction",
   "title": "Rs: Construction",
   "description": "Turns all placeable items into flatpacks. Before you can place the flatpack it will need to be converted to the entity first, with only a low stack size",
-  "version": "0.1.2"
+  "version": "0.1.3"
 }

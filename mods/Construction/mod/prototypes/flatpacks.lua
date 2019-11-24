@@ -133,8 +133,6 @@ local function change_item_properties(item, item_duplicate, entity)
     icon_size = 64
   })
   if entity then
-    print(entity.name, entity.type)
-    tprint(entity_colours[entity.type])
     table.insert(item.icons, 2,{
       icon = "__RsConstruction__/graphics/icons/flatpack_colour.png",
       icon_size = 64,
@@ -171,31 +169,48 @@ for name, item in pairs(data.raw.item) do
     end
   end
 end
+data:extend(items)
+data:extend(recipes)
 
 local function create_flatpack_technology(item, technology)
-  local prototype = data.raw.technology[technology.name.."-flatpacks"]
+  local prototype = data.raw.technology["flatpacks-"..technology.name]
   if not prototype then
-    prototype = get_prototype(technology.name.."-flatpacks", "technology")
-    prototype.prerequisites = {technology.name}
+    prototype = get_prototype("flatpacks-"..technology.name, "technology")
+    technology = table.deepcopy(technology)
+    prototype.extra_prerequisites = {technology.name}
     prototype.icons = technology.icons
     prototype.icon = technology.icon
     prototype.icon_size = technology.icon_size
     prototype.enabled = technology.enabled
     prototype.upgrade = technology.upgrade
     prototype.hidden = technology.hidden
-    prototype.max_level = technology.max_level
     prototype.unit = technology.unit
-    prototype.localised_name = {"item-name.flatpack", technology.localised_name or {"technology-name."..technology.name}}
-    prototype.localised_description = {"technology-description.flatpack", technology.localised_name or {"technology-name."..technology.name}}
+    prototype.max_level = technology.max_level
+    local has_level = string.find(technology.name, "-[%d]*$")  -- regex is always magic. Basically says ends with - and then some digits, gives back the index of the "-"
+    local local_name = technology.name
+    if has_level ~= nil then
+      local_name = technology.name:sub(1, has_level-1)
+      local level = technology.name:sub(has_level+1)
+      prototype.localised_name = {"combine", {"item-name.flatpack", technology.localised_name or {"technology-name."..local_name}}, level}
+      prototype.localised_description = {"technology-description.flatpack", {"combine", technology.localised_name or {"technology-name."..local_name}, level}}
+    else
+      prototype.localised_name = {"item-name.flatpack", technology.localised_name or {"technology-name."..local_name}}
+      prototype.localised_description = {"technology-description.flatpack", technology.localised_name or {"technology-name."..local_name}}
+    end
   end
-  table.insert(prototype.effects, {type="unlock-recipe", recipe=item.."-pack"})
-  table.insert(prototype.effects, {type="unlock-recipe", recipe=item.."-unpack"})
-  --prototype.unit.ingredients = {}
+  prototype.recipes_to_unlock = {
+    item.."-pack",
+    item.."-unpack"
+  }
+  prototype.levels = {
+    ["construction"] = get_technology_level(technology)
+  }
+  create_technology(prototype, false, false, true)
 end
 
 -- update technologies
 for name, technology in pairs(data.raw.technology) do
-  if technology.effects then
+  if technology.effects and technology.name:sub(1, 9) ~= "flatpacks" then
     local already_inserted = {}
     for _, effect in pairs(technology.effects) do
       if effect.type == "unlock-recipe" then
@@ -218,6 +233,3 @@ for name, technology in pairs(data.raw.technology) do
     end
   end
 end
-
-data:extend(items)
-data:extend(recipes)

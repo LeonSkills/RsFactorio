@@ -28,7 +28,6 @@ for tier, item_data in pairs(belts) do
       time = 15
     },
     levels = {
-      ["construction"] = item_data.level,
       ["woodcutting"] = item_data.level,
       ["smithing"] = item_data.level
     },
