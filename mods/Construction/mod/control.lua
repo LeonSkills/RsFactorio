@@ -76,40 +76,13 @@ local function on_player_pipette(event)
   end
 end
 
-
-local function unlock_recipe(research)
-  for _, effect in pairs(research.effects) do
-    if effect.type == "unlock-recipe" then
-      for _, product in pairs(game.recipe_prototypes[effect.recipe].products) do
-        if global.item_mappings[product] then
-          research.force.recipes[product.."-unpack"].enabled = true
-          research.force.recipes[product.."-pack"].enabled = true
-        end
-      end
-    end
-  end
-end
-
-local function on_research_finished(event)
-  unlock_recipe(event.research)
-end
-
 local function on_init()
   update_item_mappings()
-  for _, force in pairs(game.forces) do
-    for _, technology in pairs(force.technologies) do
-      if technology.researched then
-        on_research_finished(technology)
-      end
-    end
-  end
 end
 
 script.on_event(defines.events.on_built_entity, on_build)
 script.on_event({defines.events.on_player_main_inventory_changed}, on_inventory_changed)
 script.on_event({defines.events.on_player_pipette}, on_player_pipette)
-script.on_event({defines.events.on_research_finished}, on_research_finished)
---script.on_event({defines.events.on_configuration_changed})
 
-script.on_init(update_item_mappings)
+script.on_init(on_init)
 script.on_configuration_changed(update_item_mappings)

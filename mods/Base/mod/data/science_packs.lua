@@ -45,6 +45,12 @@ return {
   ["herblore-77"] = "rs-stamina-potion",
   ["herblore-81"] = "rs-saradomin-brew",
   ["herblore-89"] = "rs-wyrmfire-potion",
-  ["herblore-96"] = "rs-super-prayer-renewal-potion"
-
+  ["herblore-96"] = "rs-super-prayer-renewal-potion",
+  ["construction-1"] = "rs-burner-flatpack",
+  ["construction-10"] = "rs-logistic-flatpack",
+  ["construction-30"] = "rs-military-flatpack",
+  ["construction-50"] = "rs-chemical-flatpack",
+  ["construction-70"] = "rs-advanced-electric-flatpack",
+  ["construction-90"] = "rs-utility-flatpack",
+  ["construction-99"] = "rs-rocket-flatpack",
 }

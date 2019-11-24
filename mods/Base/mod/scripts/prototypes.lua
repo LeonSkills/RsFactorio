@@ -41,6 +41,8 @@ function create_item(item, is_entity)
   if contains(science_packs, item.name) then
     item.type = "tool"
     item.durability = item.durability or 1
+    item.durability_description_key = "description.science-pack-remaining-amount-key"
+    item.durability_description_value = "description.science-pack-remaining-amount-value"
     local lab = data.raw.lab["rs-burner-lab"]
     table.insert(lab.inputs, item.name)
   else
